@@ -956,6 +956,7 @@ h3.title span {
 .new-text ul li a:hover {
     color: #000;
     border-color: #000;
+    background-color: #00a6d6;
 }
 .new-grid:hover .new-text {
     left: 10%;
