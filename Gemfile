@@ -19,6 +19,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bootstrap-sass', '~> 3.3.6'
 gem "font-awesome-rails"
 gem 'faker'
+gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
+gem "mini_magick"
+gem 'cloudinary'
+
+gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
+
 
 group :development, :test do
   gem 'sqlite3'
