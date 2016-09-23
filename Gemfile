@@ -18,12 +18,12 @@ gem "jquery-turbolinks"
 gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bootstrap-sass', '~> 3.3.6'
 gem "font-awesome-rails"
+gem 'faker'
 
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
   gem 'pry'
-  gem 'faker'
   gem 'rspec-rails', '~> 3.5'
   gem 'factory_girl_rails'
   gem 'capybara'
