@@ -28,7 +28,6 @@ gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 
-
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'

@@ -15,8 +15,12 @@ class SnapProductUploader < CarrierWave::Uploader::Base
   #   "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   # end
 
-  version :thumb do
+  version :item_index do
     cloudinary_transformation width: 250, height: 333, crop: :thumb
+  end
+
+  version :thumb do
+    cloudinary_transformation width: 48, height: 48, crop: :thumb
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:

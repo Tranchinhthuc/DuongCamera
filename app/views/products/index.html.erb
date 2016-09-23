@@ -1,7 +1,11 @@
 <div class="breadcrumbs">
   <div class="container">
     <ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
-      <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+      <li>
+        <%= link_to root_path, class: "" do %>
+          <i class="fa fa-home" aria-hidden="true"></i></span> Home
+        <% end %>
+      </li>
       <li class="active">Products</li>
     </ol>
   </div>
@@ -18,17 +22,21 @@
 
           <div class="<%= class_name %>" data-wow-delay=<%= wow_delay.to_s.concat("s") %> >
             <div class="new-top">
-              <a href="single.html"><%= image_tag product.snap.thumb.url, class: "img-responsive" %></a>
+              <a href="single.html"><%= image_tag product.snap.item_index.url, class: "img-responsive" %></a>
               <div class="new-text">
                 <ul>
-                  <li><a href="single.html">Quick View </a></li>
+                  <li>
+                    <%= link_to "Quick View", product_path(product), class: "item_quantity" %>
+                  </li>
                   <li><input type="number" class="item_quantity" min="1" value="1"></li>
                   <li><a class="item_add" href=""> Add to cart</a></li>
                 </ul>
               </div>
             </div>
             <div class="new-bottom">
-              <h5><a class="name" href="single.html"><%= product.title.first(10) %> </a></h5>
+              <h5>
+                <%= link_to product.title.first(10), product_path(product), class: "name" %>
+              </h5>
               <div class="rating">
                 <span class="on">☆</span>
                 <span class="on">☆</span>
@@ -136,6 +144,7 @@
             <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Other(50)</label>
           </div>
         </div>
+
         <div class="sidebar-row">
           <h4>Color</h4>
           <div class="row row1 scroll-pane">
