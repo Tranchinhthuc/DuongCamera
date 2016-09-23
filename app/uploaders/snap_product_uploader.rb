@@ -27,6 +27,10 @@ class SnapProductUploader < CarrierWave::Uploader::Base
     cloudinary_transformation width: 219, height: 291, crop: :thumb
   end
 
+  version :trend do
+    cloudinary_transformation width: 300, height: 300, crop: :thumb
+  end
+
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
   #   # For Rails 3.1+ asset pipeline compatibility:
