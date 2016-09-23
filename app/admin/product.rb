@@ -1,5 +1,5 @@
 ActiveAdmin.register Product do
-  permit_params :title, :price, :price, :color, :description, :snap, category_ids: []
+  permit_params :title, :price, :price, :color, :description, :snap, :summary, category_ids: []
 
   controller do
     def scoped_collection
@@ -14,6 +14,7 @@ ActiveAdmin.register Product do
     column :price
     column :price
     column :color
+    column :summary
     column :snap do |product|
       image_tag product.snap.thumb.url
     end
@@ -29,6 +30,7 @@ ActiveAdmin.register Product do
       row :price
       row :price
       row :color
+      row :summary
       row :snap do |product|
         image_tag product.snap.thumb.url
       end
@@ -45,6 +47,7 @@ ActiveAdmin.register Product do
       f.input :color
       f.input :description
       f.input :snap
+      f.input :summary
       f.input :categories, as: :check_boxes, collection: Category.all
     end
     f.actions

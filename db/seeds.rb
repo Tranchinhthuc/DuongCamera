@@ -16,8 +16,9 @@ Category.all.each do |category|
       price: Faker::Commerce.price,
       size: "S M L XL XLL",
       color: "red white blue",
-      description: Faker::Lorem.sentence,
-      snap: File.open(Rails.root + snap_url)
+      description: Faker::Lorem.paragraph(2),
+      snap: File.open(Rails.root + snap_url),
+      summary: Faker::Lorem.sentence
     )
   end
 end
