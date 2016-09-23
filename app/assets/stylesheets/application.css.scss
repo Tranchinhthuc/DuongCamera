@@ -17,6 +17,8 @@
  *= require_self
  */
 
+@import "font-awesome";
+
 
 .banner .flex-control-nav.flex-control-paging {
   left: 0;
@@ -27,4 +29,10 @@
 .trend .flex-control-nav.flex-control-paging {
   top: auto;
   width: 0;
+}
+
+.header-right i.fa {
+    font-size: 1.5em;
+    color: #ff590f;
+    margin-right: 5px;
 }

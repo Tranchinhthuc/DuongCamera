@@ -30,6 +30,8 @@ ul,label{
 }
 body a:hover{
 	text-decoration:none;
+    background-color: transparent;
+    font-weight: bold;
 }
 /*--header--*/
 .navbar.navbar-default {
