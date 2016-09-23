@@ -2,7 +2,7 @@ puts "Seeding..."
 
 print "Creating category..."
   Category.create(title: "Toy")
-  Category.create(title: "Boy")
+  Category.create(title: "Popular")
   Category.create(title: "New")
 puts "done"
 

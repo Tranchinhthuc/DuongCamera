@@ -36,3 +36,16 @@
     color: #ff590f;
     margin-right: 5px;
 }
+
+.gallery-text ul li a i.fa:hover {
+  color: #ff590f;
+}
+
+.gallery-text ul li a i.fa {
+  font-size: 1.2em;
+  color: #33414E;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  -moz-transition: .5s all;
+}
+

@@ -1,0 +1,7 @@
+category_name:
+  new: New
+  popular: Popular
+
+product_limit:
+  new: 4
+  popular: 8
