@@ -22,7 +22,7 @@
 
           <div class="<%= class_name %>" data-wow-delay=<%= wow_delay.to_s.concat("s") %> >
             <div class="new-top">
-              <a href="single.html"><%= image_tag product.snap.item_index.url, class: "img-responsive" %></a>
+              <%= image_tag product.snap.item_index.url, class: "img-responsive" %>
               <div class="new-text">
                 <ul>
                   <li>
@@ -54,9 +54,10 @@
           </div>
         <% end %>
       <% end %>
+      <%= paginate @products %>
     </div>
 
     <%= render "side_bar" %>
     <div class="clearfix"></div>
-    </div>
   </div>
+</div>

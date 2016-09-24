@@ -14,7 +14,11 @@
             <div class="gallery-text simpleCart_shelfItem">
               <h5><%= link_to product.title.first(10), product_path(product), class: "name" %></h5>
               <p><span class="item_price"><%= product.price %></span></p>
-              <h4 class="sizes">Sizes: <a href="#"> s</a> - <a href="#">m</a> - <a href="#">l</a> - <a href="#">xl</a> </h4>
+              <h4 class="sizes">
+                Sizes: <% product.size.split(" ").each_with_index do |size, index| %>
+                  <a href=""><%= size %></a> <%= " - " if index != (product.size.split(" ").size-1) %>
+                <% end %>
+              </h4>
               <ul>
                 <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
                 <li><a class="item_add" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>

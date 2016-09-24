@@ -47,10 +47,9 @@
         <p><%= @product.summary %></p>
         <ul class="size">
           <h4>Size</h4>
-          <li><a href="#">6-12 M</a></li>
-          <li><a href="#">1-2 Y</a></li>
-          <li><a href="#">2-3 Y</a></li>
-          <li><a href="#">3-4 Y</a></li>
+          <% @product.size.split(" ").each do |size| %>
+            <li><a href="#"><%= size %></a></li>
+          <% end %>
         </ul>
         <ul class="color">
           <h4>Color</h4>

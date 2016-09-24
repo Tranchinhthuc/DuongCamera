@@ -4,7 +4,12 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @products  = if params[:category].present?
+      Product.find_by_category(params[:category]).page(params[:page]).per(9)
+    else
+      Product.all.page(params[:page]).per(9)
+    end
+    @random_product = Product.all.sample
   end
 
   # GET /products/1

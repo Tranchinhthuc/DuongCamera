@@ -89,20 +89,14 @@
   </div>
   <div class="gallery-grid ">
     <h6>YOU MAY ALSO LIKE</h6>
-    <a href="single.html"><%= image_tag "b1.png", class:"img-responsive" %></a>
+    <a href="single.html"><%= image_tag @random_product.snap.also_like.url, class:"img-responsive" %></a>
     <div class="gallery-text simpleCart_shelfItem">
-      <h5><a class="name" href="single.html">Full Sleeves Romper</a></h5>
-      <p><span class="item_price">60$</span></p>
-      <h4 class="sizes">Sizes: <a href="#"> s</a> - <a href="#">m</a> - <a href="#">l</a> - <a href="#">xl</a>
+      <h5><%= link_to @random_product.title, product_path(@random_product), class: "name" %></h5>
+      <p><span class="item_price"><%= @random_product.price %></span></p>
+      <h4 class="sizes">Sizes: <% @random_product.size.split(" ").each_with_index do |size, index| %>
+          <a href=""><%= size %></a> <%= " - " if index != (@random_product.size.split(" ").size-1) %>
+        <% end %>
       </h4>
-      <ul>
-        <li><a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a></li>
-        <li>
-          <a class="item_add" href="#"><span class="glyphicon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
-        </li>
-        <li><a href="#"><span class="glyphicon glyphicon glyphicon-heart-empty" aria-hidden="true"></span></a>
-        </li>
-      </ul>
     </div>
   </div>
 </div>

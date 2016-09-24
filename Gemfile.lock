@@ -402,6 +402,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   jquery-turbolinks
+  kaminari
   launchy
   meta_request
   mini_magick

@@ -17,5 +17,9 @@ class Product < ApplicationRecord
         products.order("created_at desc").limit(Settings.product_limit.popular)
       end
     end
+
+    def find_by_category category_title
+      Category.find_by(title: category_title).products
+    end
   end
 end

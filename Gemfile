@@ -27,6 +27,7 @@ gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
+gem 'kaminari'
 
 group :development, :test do
   gem 'sqlite3'
