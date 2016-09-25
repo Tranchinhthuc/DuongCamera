@@ -89,7 +89,10 @@
   </div>
   <div class="gallery-grid ">
     <h6>YOU MAY ALSO LIKE</h6>
-    <a href="single.html"><%= image_tag @random_product.snap.also_like.url, class:"img-responsive" %></a>
+
+    <%= link_to product_path(@random_product) do %>
+      <%= image_tag @random_product.snap.also_like.url, class:"img-responsive" %>
+    <% end %>
     <div class="gallery-text simpleCart_shelfItem">
       <h5><%= link_to @random_product.title, product_path(@random_product), class: "name" %></h5>
       <p><span class="item_price"><%= @random_product.price %></span></p>
