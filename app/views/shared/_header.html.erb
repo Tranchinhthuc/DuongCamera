@@ -29,7 +29,7 @@
       </div>
       <div class="nav navbar-nav logo wow zoomIn animated" data-wow-delay=".7s">
         <h1>
-          <%= link_to root_path do %>
+          <%= link_to root_path, data: { turbolinks: 'false' } do %>
             Modern <b>Shoppe</b><span class="tag">Everything for Kids world </span>
           <% end %>
         </h1>
@@ -68,7 +68,7 @@
         <!--navbar-header-->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav top-nav-info">
-            <li><%= link_to "Home", root_path, class: "#{'active' if params[:controller] == 'static_pages'}" %></li>
+            <li><%= link_to "Home", root_path, class: "#{'active' if params[:controller] == 'static_pages'}", data: { turbolinks: 'false' } %></li>
             <li><%= link_to "Products", products_path, class: "#{'active' if params[:controller] == 'products'}" %></li>
 
             <li class="dropdown grid">
