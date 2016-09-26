@@ -21,3 +21,41 @@
 
 en:
   hello: "Hello world"
+
+  header:
+    shop_name_first: Modern
+    shop_name_last: Shoppe
+    sub_shop_name: Everything for Kids world
+    menu:
+      home: Home
+      products: Products
+      categories: Categories
+      special_offers: Special Offers
+      today_only: Today Only
+
+  breadcrumbs:
+    home: Home
+    product: Products
+    details: Details
+
+  new_arrivals:
+    first: New
+    last: Arrivals
+    summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur
+    add_cart: Add to cart
+    quick_view: Quick View
+    show_details: Show Details
+
+  gallery:
+    first: Popular
+    last: Products
+    summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur
+
+  products:
+    also_like: YOU MAY ALSO LIKE
+    show:
+      size: Size
+      color: Color
+      qty: Qty
+      add_cart: ADD TO CART
+      description: Description

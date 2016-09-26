@@ -2,8 +2,8 @@
 <div class="gallery">
   <div class="container">
     <div class="title-info wow fadeInUp animated" data-wow-delay=".5s">
-      <h3 class="title">Popular<span> Products</span></h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur </p>
+      <h3 class="title"><%= t "gallery.first" %><span> <%= t "gallery.last" %></span></h3>
+      <p><%= t "gallery.summary" %> </p>
     </div>
     <div class="gallery-info">
       <% @populer_product.each_slice(4) do |group| %>

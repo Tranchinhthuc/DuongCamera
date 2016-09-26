@@ -30,7 +30,7 @@
       <div class="nav navbar-nav logo wow zoomIn animated" data-wow-delay=".7s">
         <h1>
           <%= link_to root_path, data: { turbolinks: 'false' } do %>
-            Modern <b>Shoppe</b><span class="tag">Everything for Kids world </span>
+            <%= t "header.shop_name_first" %> <b><%= t "header.shop_name_last" %></b><span class="tag"><%= t "header.sub_shop_name" %> </span>
           <% end %>
         </h1>
       </div>
@@ -68,11 +68,11 @@
         <!--navbar-header-->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav top-nav-info">
-            <li><%= link_to "Home", root_path, class: "#{'active' if params[:controller] == 'static_pages'}", data: { turbolinks: 'false' } %></li>
-            <li><%= link_to "Products", products_path, class: "#{'active' if params[:controller] == 'products'}" %></li>
+            <li><%= link_to t("header.menu.home"), root_path, class: "#{'active' if params[:controller] == 'static_pages'}", data: { turbolinks: 'false' } %></li>
+            <li><%= link_to t("header.menu.products"), products_path, class: "#{'active' if params[:controller] == 'products'}" %></li>
 
             <li class="dropdown grid">
-              <a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Categories<b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle list1" data-toggle="dropdown"><%= t("header.menu.categories") %><b class="caret"></b></a>
               <ul class="dropdown-menu multi-column menu-two multi-column3">
                 <div class="row">
                   <div class="col-sm-4 menu-grids">
@@ -87,7 +87,7 @@
                   <div class="col-sm-8 menu-grids">
                     <%= link_to products_path do %>
                       <div class="new-add">
-                        <h5>30% OFF <br> Today Only</h5>
+                        <h5>30% OFF <br> <%= t("header.menu.today_only") %></h5>
                       </div>
                     <% end %>
                   </div>
@@ -96,7 +96,7 @@
               </ul>
             </li>
 
-            <li><a href="codes.html">Special Offers</a></li>
+            <li><a href="codes.html"><%= t("header.menu.special_offers") %></a></li>
           </ul>
           <div class="clearfix"></div>
           <!--//navbar-collapse-->

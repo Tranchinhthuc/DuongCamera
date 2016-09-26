@@ -12,7 +12,6 @@ ActiveAdmin.register Product do
     id_column
     column :title
     column :price
-    column :price
     column :color
     column :summary
     column :snap do |product|

@@ -88,7 +88,7 @@
     </div>
   </div>
   <div class="gallery-grid ">
-    <h6>YOU MAY ALSO LIKE</h6>
+    <h6><%= t "products.also_like" %></h6>
 
     <%= link_to product_path(@random_product) do %>
       <%= image_tag @random_product.snap.also_like.url, class:"img-responsive", alt:"đồ chơi mua nhiều" %>

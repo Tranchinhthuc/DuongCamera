@@ -3,10 +3,10 @@
     <ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
       <li>
         <%= link_to root_path, class: "", data: { turbolinks: 'false' } do %>
-          <i class="fa fa-home" aria-hidden="true"></i></span> Home
+          <i class="fa fa-home" aria-hidden="true"></i></span> <%= t "breadcrumbs.home" %>
         <% end %>
       </li>
-      <li class="active">Products</li>
+      <li class="active"><%= t "breadcrumbs.product" %></li>
     </ol>
   </div>
 </div>
@@ -26,10 +26,10 @@
               <div class="new-text">
                 <ul>
                   <li>
-                    <%= link_to "Quick View", product_path(product), class: "item_quantity" %>
+                    <%= link_to t("new_arrivals.quick_view"), product_path(product), class: "item_quantity" %>
                   </li>
                   <li><input type="number" class="item_quantity" min="1" value="1"></li>
-                  <li><a class="item_add" href=""> Add to cart</a></li>
+                  <li><a class="item_add" href=""> <%= t("new_arrivals.add_cart") %></a></li>
                 </ul>
               </div>
             </div>
