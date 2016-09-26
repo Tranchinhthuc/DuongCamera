@@ -21,6 +21,7 @@ ActiveAdmin.register Product do
     column :category do |product|
       product.categories.map(&:title).join(", ")
     end
+
     actions
   end
 

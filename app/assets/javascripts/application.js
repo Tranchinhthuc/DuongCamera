@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require nprogress
 //= require nprogress-turbolinks
-//= require_tree .
+//= require_tree ./js
+//= require active_admin.js

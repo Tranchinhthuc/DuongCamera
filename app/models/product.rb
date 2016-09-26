@@ -5,15 +5,15 @@ class Product < ApplicationRecord
   mount_uploader :snap, SnapProductUploader
 
   class << self
-    def filter_by_category category_name
-      products = if Category.find_by(title: category_name).present? && Category.find_by(title: category_name).products.limit(4).size > 4
-                        Category.find_by(title: category_name).products
+    def filter_by_category category
+      products = if category.present? && category.products.size > 0
+                        category.products
                       else
                         Product.order("random()")
                       end
-      if category_name == Settings.category_name.new
+      if category == Category.first
         products.order("created_at desc").limit(Settings.product_limit.new)
-      elsif category_name == Settings.category_name.popular
+      elsif category == Category.limit(2)[1]
         products.order("created_at desc").limit(Settings.product_limit.popular)
       end
     end
