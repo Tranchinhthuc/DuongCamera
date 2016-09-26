@@ -23,11 +23,12 @@ gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
 gem "mini_magick"
 gem 'cloudinary'
 
-gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
+gem 'activemodel-serializers-xml'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'kaminari'
+gem 'globalize', github: 'globalize/globalize'
 
 group :development, :test do
   gem 'sqlite3'

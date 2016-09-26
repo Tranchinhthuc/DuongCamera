@@ -1,0 +1,61 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+vi:
+  hello: "Hello world"
+
+  header:
+    shop_name_first: Đồ chơi
+    shop_name_last: cho bé
+    sub_shop_name: Everything for Kids world
+    menu:
+      home: Trang chủ
+      products: Sản phẩm
+      categories: Phân loại
+      special_offers: Khuyến mại
+      today_only: Chỉ hôm nay
+
+  breadcrumbs:
+    home: Trang chủ
+    product: Sản phẩm
+    details: Thông tin
+
+  new_arrivals:
+    first: Hàng mới
+    last: về
+    summary: Nhanh tay lựa chọn những mẫu mới về
+    add_cart: Thêm vào giỏ
+    quick_view: Xem nhanh
+    show_details: Xem hàng
+
+  gallery:
+    first: Sản phẩm
+    last: bán chạy
+    summary: Những sản phẩm bán chạy nhất tuần qua
+
+  products:
+    also_like: Có thể bạn quan tâm
+    show:
+      size: Cỡ
+      color: Màu sắc
+      qty: S.lượng
+      add_cart: CHO VÀO GIỎ
+      description: Mô tả
