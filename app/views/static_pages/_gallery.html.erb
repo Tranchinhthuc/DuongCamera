@@ -10,7 +10,7 @@
         <% group.each_with_index do |product, index| %>
           <% wow_delay = 0.5 + (index)*0.2 %>
           <div class="<%= class_popular_product index %>" data-wow-delay=<%= wow_delay %>>
-            <a href="products.html"><%=image_tag product.snap.item_index.url, class:"img-responsive", alt:"" %></a>
+            <a href="products.html"><%=image_tag product.snap.item_index.url, class:"img-responsive", alt:"đồ chơi mua nhiều" %></a>
             <div class="gallery-text simpleCart_shelfItem">
               <h5><%= link_to product.title, product_path(product), class: "name title_product" %></h5>
               <p><span class="item_price"><%= product.price %></span></p>

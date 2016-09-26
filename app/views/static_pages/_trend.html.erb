@@ -8,7 +8,7 @@
             <% @trends.each do |trend| %>
               <li>
                 <div class="col-md-5 trend-left">
-                  <%= image_tag trend.snap.trend.url %>
+                  <%= image_tag trend.snap.trend.url, alt:"đồ chơi hot" %>
                 </div>
                 <div class="col-md-7 trend-right">
                   <h4><%= trend.first_title %> <span><%= trend.last_title %></span></h4>

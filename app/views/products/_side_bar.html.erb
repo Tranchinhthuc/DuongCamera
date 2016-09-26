@@ -91,7 +91,7 @@
     <h6>YOU MAY ALSO LIKE</h6>
 
     <%= link_to product_path(@random_product) do %>
-      <%= image_tag @random_product.snap.also_like.url, class:"img-responsive" %>
+      <%= image_tag @random_product.snap.also_like.url, class:"img-responsive", alt:"đồ chơi mua nhiều" %>
     <% end %>
     <div class="gallery-text simpleCart_shelfItem">
       <h5><%= link_to @random_product.title, product_path(@random_product), class: "name title_product" %></h5>
