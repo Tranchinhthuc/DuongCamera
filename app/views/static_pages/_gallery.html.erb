@@ -12,7 +12,7 @@
           <div class="<%= class_popular_product index %>" data-wow-delay=<%= wow_delay %>>
             <a href="products.html"><%=image_tag product.snap.item_index.url, class:"img-responsive", alt:"" %></a>
             <div class="gallery-text simpleCart_shelfItem">
-              <h5><%= link_to product.title.first(10), product_path(product), class: "name" %></h5>
+              <h5><%= link_to product.title, product_path(product), class: "name title_product" %></h5>
               <p><span class="item_price"><%= product.price %></span></p>
               <h4 class="sizes">
                 Sizes: <% product.size.split(" ").each_with_index do |size, index| %>

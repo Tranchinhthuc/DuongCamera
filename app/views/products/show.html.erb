@@ -53,10 +53,9 @@
         </ul>
         <ul class="color">
           <h4>Color</h4>
-          <li><a href="#"></a></li>
-          <li><a href="#" class="red"></a></li>
-          <li><a href="#" class="green"></a></li>
-          <li><a href="#" class="pink"></a></li>
+          <% @product.color.split.each do |color| %>
+            <li><a href="#" style="background-color: <%= color %>; border: grey 1px solid"></a></li>
+          <% end %>
         </ul>
         <div class="clearfix"> </div>
         <div class="quantity">

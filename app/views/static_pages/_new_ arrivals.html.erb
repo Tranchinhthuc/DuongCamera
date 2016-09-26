@@ -29,14 +29,7 @@
             </div>
           </div>
           <div class="new-bottom">
-            <h5><%= link_to product.title.first(10), product_path(product), class: "name" %></h5>
-            <div class="rating">
-              <span class="on">☆</span>
-              <span class="on">☆</span>
-              <span class="on">☆</span>
-              <span class="on">☆</span>
-              <span>☆</span>
-            </div>
+            <h5><%= link_to product.title, product_path(product), class: "name title_product" %></h5>
             <div class="ofr">
               <p class="pric1"><del><%= (product.price + (product.price)*0.2).round(2) %></del></p>
               <p><span class="item_price"><%= product.price %></span></p>
