@@ -1,18 +1,2987 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Shoppe</title>
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+<html class="cufon-active cufon-ready" slick-uniqueid="1" lang="vi"><head>
+    <title>HANOICOMPUTER - HI-END COMPUTER WORLD NO1 VIETNAM</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="http://www.hanoicomputer.vn/template/default/images/favicon.png" type="image/x-icon">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', :"data-no-turbolink" => true %>
+    <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= render "shared/header" %>
 
-  <%= yield %>
+<div id="wrap">
+  <div class="clear"></div>
+  <%= render "layouts/header" %>
+  <div class="container">
+      <%= render "layouts/left_nav" %>
+      <%= render "layouts/search_form" %><!--nav-->
+      <div class="clear"></div>
+  </div><!--container-->
+    
+  <!-- <div id="show_popup">
+    <div id="popupContact" style="width: 600px; height: 543px; position: absolute; top: 75px; left: 236.5px; display: none;">
+      <div id="popupContactClose" href="javascript:;">
+      <a style="cursor:pointer; font-size:45px;color:red;" onclick="closePop();">[x]</a>
+      </div>
+      <p id="contactArea"><a href="http://hanoicomputer.vn/khuyenmai/" target="_blank"><img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/popup_popup-600-x-600.png"></a></p>
+  </div> -->
+  <div id="backgroundPopup" style="height: 693px; opacity: 0.7; display: none;"></div>
+  </div>
 
-  <%= render "shared/footer" %>
-</body>
-</html>
+  <div id="container_slider">
+    <!-- <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: 0px; right: 0px; bottom: 0px; left: 0px; z-index: auto; width: 720px; height: 385px; margin: 0px 10px 0px 0px; overflow: hidden;">
+      <div id="slider" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 7920px; height: 385px; z-index: auto; opacity: 1;">
+        <img src="/assets/banner_85fc37b1.jpg">
+        <img src="/assets/banner_26dd0dbc.jpg">
+        <img src="/assets/banner_2421fcb1.jpg">
+        <img src="/assets/banner_15de21c6.jpg">
+        <img src="/assets/banner_a733fa9b.jpg">
+      </div>
+    </div>
+    <div id="control_slide">
+      <div class="prev22" style="opacity: 0.4; display: block;"></div>
+      <div class="next22" style="opacity: 0.4; display: block;"></div>
+    </div>
+    <div class="pager">
+      <div id="pager2" style="display: inline-block;" class="">
+        <a href="#" class="">
+          <span>1</span>
+        </a>
+        <a href="#" class="selected"><span>2</span></a>
+        <a href="#" class=""><span>3</span></a>
+        <a href="#" class=""><span>4</span></a>
+        <a href="#" class=""><span>5</span></a>
+      </div>
+    </div> -->
+    <div class="clear space"></div>
+  </div><!--container_slider-->
+
+  <div style="width: 980px;overflow: hidden;float: right; position:relative;" id="thumb_slider">
+    <a href="" class="prevSlider">
+      <img src="/assets/icon_prev.png" alt="prev">
+    </a>
+    <a href="" class="nextSlider">
+      <img src="/assets/icon_next.png" alt="next">
+    </a>
+  </div>
+  <div class="clear space"></div>
+  <div id="banner_cs_home"></div>
+  <div class="clear"></div>
+
+  <div id="box_pro_special_home">
+    <div class="title_tab">
+        <a href="#tab1" class="cufon1 a_tab current">Sản phẩm khuyến mãi</a>
+        <a href="#tab2" class="cufon1 a_tab">Sản phẩm bán chạy</a>
+        <a href="#tab3" class="cufon1 a_tab">Sản phẩm mới</a>
+        <a href="#tab4" class="cufon1 a_tab">Sản phẩm thanh lý</a>
+    </div><!--title_tab-->
+    <div class="clear"></div>
+    <div class="content_tab">
+      <div class="product_list">
+        <ul id="tab1" style="display:block;" class="ul cf">
+            <a href="http://www.hanoicomputer.vn/san-pham-xa-hang" class="viewall">Xem tất cả &gt;&gt;</a>
+            
+            <li class="nomar_l">
+                <div class="bg iconSaleOff"></div>
+                <!---->
+                <div class="p_container">
+                  <div class="p_sku">Mã SP: MOVI045</div>
+                  <a href="http://www.hanoicomputer.vn/viewsonic-23vx2363s-led/p25580.html" class="p_img">
+                    <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_25580_01.jpg" data-src="/media/product/250_25580_01.jpg" style="visibility: visible; opacity: 1;">
+                  </a>
+                  <div class="p_price img_price">
+                    <span class="price-number-small-2"></span>
+                    <span class="price-number-small-dot"></span>
+                    <span class="price-number-small-7"></span>
+                    <span class="price-number-small-9"></span>
+                    <span class="price-number-small-9"></span>
+                    <span class="price-number-small-dot"></span>
+                  </div>
+                  <div class="container_old_price"></div>
+                  <div class="clear"></div>
+                  <a href="http://www.hanoicomputer.vn/viewsonic-23vx2363s-led/p25580.html" class="p_name">
+                    Monitor Viewsonic 23"VX2363S LED
+                  </a>
+                  <div class="p_quantity">
+                    <i class="bg icon_in_stock"></i>
+                  </div>
+                  <a href="javascript:addToShoppingCartStop('pro','25580',1,'2799000')" class="btn-cart-stop">
+                    Mua ngay
+                  </a>
+                </div><!--wrap_pro-->
+
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/viewsonic-23vx2363s-led/p25580.html" class="hover_name">
+                      Monitor Viewsonic 23"VX2363S LED
+                    </a>
+                    
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/18_ViewSonic.png">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                        <tbody>
+                          <tr>
+                            <td><b>Giá bán:</b></td>
+                            <td>
+                                <span class="img_price_full">
+                                  <span class="price-number-small-2"></span>
+                                  <span class="price-number-small-dot"></span>
+                                  <span class="price-number-small-7"></span>
+                                  <span class="price-number-small-9"></span>
+                                  <span class="price-number-small-9"></span>
+                                  <span class="price-number-small-dot"></span>
+                                  <span class="price-number-small-0"></span>
+                                  <span class="price-number-small-0"></span>
+                                  <span class="price-number-small-0"></span>
+                                </span>
+                                <span class="hover_vat"> [Đã bao gồm VAT] </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><b>Bảo hành:</b></td><td>36T</td>
+                          </tr>
+                          <tr>
+                            <td><b>Kho hàng:</b></td>
+                            <td>
+                              Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+                </div><!--hover_content_pro-->
+            </li>
+
+            <li>
+                <div class="bg iconSaleOff"></div>
+                <div class="bg iconHot"></div>
+                
+                <!--<div class="icon-km"><span>KM</span></div>-->
+                <div class="p_container">
+                  <div class="p_sku">Mã SP: CAHI083</div>
+                  <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_img">
+                    <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_31431_28765_cahi042_001.jpg" data-src="/media/product/250_31431_28765_cahi042_001.jpg" alt="Camera IP không dây HikVision DS-2CD2842F-IW" style="visibility: visible; opacity: 1;">
+                  </a>
+                  <div class="p_price img_price">
+                    <span class="price-number-small-2"></span>
+                    <span class="price-number-small-dot"></span>
+                    <span class="price-number-small-7"></span>
+                    <span class="price-number-small-9"></span>
+                    <span class="price-number-small-9"></span>
+                    <span class="price-number-small-dot"></span>
+                  </div>
+                  <div class="container_old_price">
+                      
+                  </div>
+                  <div class="clear"></div>
+                  <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_name">
+                    Camera IP không dây HikVision DS-2CD2842F-IW
+                  </a>
+                  <div class="p_quantity">
+                    <i class="bg icon_in_stock"></i>
+                  </div>
+                  <a href="javascript:addToShoppingCartStop('pro','31431',1,'2799000')" class="btn-cart-stop">
+                    Mua ngay
+                  </a>
+                </div><!--wrap_pro-->
+
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="hover_name">
+                      Camera IP không dây HikVision DS-2CD2842F-IW
+                    </a>
+                    
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><b>Giá bán:</b></td>
+                          <td>
+                            <span class="img_price_full">
+                              <span class="price-number-small-2"></span>
+                              <span class="price-number-small-dot"></span>
+                              <span class="price-number-small-7"></span>
+                              <span class="price-number-small-9"></span>
+                              <span class="price-number-small-9"></span>
+                              <span class="price-number-small-dot"></span>
+                              <span class="price-number-small-0"></span>
+                              <span class="price-number-small-0"></span>
+                              <span class="price-number-small-0"></span>
+                            </span>
+                            <span class="hover_vat"> [Đã bao gồm VAT] </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Bảo hành:</b></td><td>24T</td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Kho hàng:</b></td>
+                          <td>
+                            Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Mô tả tóm tắt:</b><br>
+                        + THƯƠMG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI - MODEL CAO CẤP<br>
+                        + Camera IP Cube Wifi hồng ngoại 2.0MP (All in One)<br>
+                        + Độ phân giải:  2.0 Megapixel, Cảm biến: 1/3" Progressive Scan CMOS<br>
+                        + Ống kính 2.8mm ( Đặt hàng: 4mm, 6mm). Độ nhạy sáng cao:0.01 Lux@F1.2. 0 Lux với IR. Tầm xa hồng ngoại nhìn đêm: 10m, Tầm xa cảm biến chống trộm: 10m<br>
+                        + Kết nối không dây Wifi hoặc có dây RJ45. Chống nhiễu kỹ thật số DNR, Chống ngược sáng kỹ thật số WDR, Cắt lọc hồng ngoại ICR . Tích hợp mic và loa trên camera.<br>
+                    </div>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Khuyến mại:</b><br>
+                        - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                    </div>
+                </div><!--hover_content_pro-->
+            </li>
+            
+            <li>
+                <div class="bg iconSaleOff"></div>
+                <div class="bg iconHot"></div>
+                
+                <!--<div class="icon-km"><span>KM</span></div>-->
+                <div class="p_container">
+                    <div class="p_sku">Mã SP: CAKM009</div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                      <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                    </a>
+                    <div class="p_price img_price">
+                      <span class="price-number-small-3"></span>
+                      <span class="price-number-small-dot"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-dot"></span>
+                    </div>
+                    <div class="container_old_price">
+                        <div class="p_old_price">4.999.000 VND</div>
+                        <div class="price_off">-20%</div>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <div class="p_quantity">
+                      <i class="bg icon_in_stock"></i>
+                    </div>
+                    <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                      Mua ngay
+                    </a>
+                </div><!--wrap_pro-->
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><b>Giá bán:</b></td>
+                          <td>
+                              <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                              <span class="hover_vat">
+                                  [Đã bao gồm VAT]
+                                  
+                              </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Bảo hành:</b></td><td></td>
+                        </tr>
+                        <tr>
+                          <td><b>Kho hàng:</b></td>
+                          <td>
+                            Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Mô tả tóm tắt:</b><br>
+                        + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                        + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                        + 01 Ổ cứng HDD 1000G<br>
+                        + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                        + 01 Nguồn cho Camera 12V-1A<br>
+                    </div>
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Khuyến mại:</b><br>
+                        - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                        
+                    </div>
+                    
+                </div><!--hover_content_pro-->
+            </li>
+
+            <li>
+                <div class="bg iconSaleOff"></div>
+                <div class="bg iconHot"></div>
+                
+                <!--<div class="icon-km"><span>KM</span></div>-->
+                <div class="p_container">
+                    <div class="p_sku">Mã SP: CAKM009</div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                      <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                    </a>
+                    <div class="p_price img_price">
+                      <span class="price-number-small-3"></span>
+                      <span class="price-number-small-dot"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-dot"></span>
+                    </div>
+                    <div class="container_old_price">
+                        <div class="p_old_price">4.999.000 VND</div>
+                        <div class="price_off">-20%</div>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <div class="p_quantity">
+                      <i class="bg icon_in_stock"></i>
+                    </div>
+                    <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                      Mua ngay
+                    </a>
+                </div><!--wrap_pro-->
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><b>Giá bán:</b></td>
+                          <td>
+                              <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                              <span class="hover_vat">
+                                  [Đã bao gồm VAT]
+                                  
+                              </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Bảo hành:</b></td><td></td>
+                        </tr>
+                        <tr>
+                          <td><b>Kho hàng:</b></td>
+                          <td>
+                            Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Mô tả tóm tắt:</b><br>
+                        + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                        + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                        + 01 Ổ cứng HDD 1000G<br>
+                        + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                        + 01 Nguồn cho Camera 12V-1A<br>
+                    </div>
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Khuyến mại:</b><br>
+                        - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                        
+                    </div>
+                    
+                </div><!--hover_content_pro-->
+            </li>
+
+            <li>
+                <div class="bg iconSaleOff"></div>
+                <div class="bg iconHot"></div>
+                
+                <!--<div class="icon-km"><span>KM</span></div>-->
+                <div class="p_container">
+                    <div class="p_sku">Mã SP: CAKM009</div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                      <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                    </a>
+                    <div class="p_price img_price">
+                      <span class="price-number-small-3"></span>
+                      <span class="price-number-small-dot"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-dot"></span>
+                    </div>
+                    <div class="container_old_price">
+                        <div class="p_old_price">4.999.000 VND</div>
+                        <div class="price_off">-20%</div>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <div class="p_quantity">
+                      <i class="bg icon_in_stock"></i>
+                    </div>
+                    <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                      Mua ngay
+                    </a>
+                </div><!--wrap_pro-->
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><b>Giá bán:</b></td>
+                          <td>
+                              <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                              <span class="hover_vat">
+                                  [Đã bao gồm VAT]
+                                  
+                              </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Bảo hành:</b></td><td></td>
+                        </tr>
+                        <tr>
+                          <td><b>Kho hàng:</b></td>
+                          <td>
+                            Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Mô tả tóm tắt:</b><br>
+                        + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                        + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                        + 01 Ổ cứng HDD 1000G<br>
+                        + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                        + 01 Nguồn cho Camera 12V-1A<br>
+                    </div>
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Khuyến mại:</b><br>
+                        - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                        
+                    </div>
+                    
+                </div><!--hover_content_pro-->
+            </li>    
+        </ul>
+        <ul id="tab2" class="ul cf">
+            <a href="http://www.hanoicomputer.vn/san-pham-ban-chay" class="viewall">Xem tất cả &gt;&gt;</a>
+            <li class="nomar_l">
+                <div class="bg iconSaleOff"></div>
+                <!---->
+                <div class="p_container">
+                  <div class="p_sku">Mã SP: MOVI045</div>
+                  <a href="http://www.hanoicomputer.vn/viewsonic-23vx2363s-led/p25580.html" class="p_img">
+                    <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_25580_01.jpg" data-src="/media/product/250_25580_01.jpg" style="visibility: visible; opacity: 1;">
+                  </a>
+                  <div class="p_price img_price">
+                    <span class="price-number-small-2"></span>
+                    <span class="price-number-small-dot"></span>
+                    <span class="price-number-small-7"></span>
+                    <span class="price-number-small-9"></span>
+                    <span class="price-number-small-9"></span>
+                    <span class="price-number-small-dot"></span>
+                  </div>
+                  <div class="container_old_price"></div>
+                  <div class="clear"></div>
+                  <a href="http://www.hanoicomputer.vn/viewsonic-23vx2363s-led/p25580.html" class="p_name">
+                    Monitor Viewsonic 23"VX2363S LED
+                  </a>
+                  <div class="p_quantity">
+                    <i class="bg icon_in_stock"></i>
+                  </div>
+                  <a href="javascript:addToShoppingCartStop('pro','25580',1,'2799000')" class="btn-cart-stop">
+                    Mua ngay
+                  </a>
+                </div><!--wrap_pro-->
+
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/viewsonic-23vx2363s-led/p25580.html" class="hover_name">
+                      Monitor Viewsonic 23"VX2363S LED
+                    </a>
+                    
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/18_ViewSonic.png">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                        <tbody>
+                          <tr>
+                            <td><b>Giá bán:</b></td>
+                            <td>
+                                <span class="img_price_full">
+                                  <span class="price-number-small-2"></span>
+                                  <span class="price-number-small-dot"></span>
+                                  <span class="price-number-small-7"></span>
+                                  <span class="price-number-small-9"></span>
+                                  <span class="price-number-small-9"></span>
+                                  <span class="price-number-small-dot"></span>
+                                  <span class="price-number-small-0"></span>
+                                  <span class="price-number-small-0"></span>
+                                  <span class="price-number-small-0"></span>
+                                </span>
+                                <span class="hover_vat"> [Đã bao gồm VAT] </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><b>Bảo hành:</b></td><td>36T</td>
+                          </tr>
+                          <tr>
+                            <td><b>Kho hàng:</b></td>
+                            <td>
+                              Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+                </div><!--hover_content_pro-->
+            </li>
+
+            <li>
+                <div class="bg iconSaleOff"></div>
+                <div class="bg iconHot"></div>
+                
+                <!--<div class="icon-km"><span>KM</span></div>-->
+                <div class="p_container">
+                  <div class="p_sku">Mã SP: CAHI083</div>
+                  <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_img">
+                    <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_31431_28765_cahi042_001.jpg" data-src="/media/product/250_31431_28765_cahi042_001.jpg" alt="Camera IP không dây HikVision DS-2CD2842F-IW" style="visibility: visible; opacity: 1;">
+                  </a>
+                  <div class="p_price img_price">
+                    <span class="price-number-small-2"></span>
+                    <span class="price-number-small-dot"></span>
+                    <span class="price-number-small-7"></span>
+                    <span class="price-number-small-9"></span>
+                    <span class="price-number-small-9"></span>
+                    <span class="price-number-small-dot"></span>
+                  </div>
+                  <div class="container_old_price">
+                      
+                  </div>
+                  <div class="clear"></div>
+                  <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_name">
+                    Camera IP không dây HikVision DS-2CD2842F-IW
+                  </a>
+                  <div class="p_quantity">
+                    <i class="bg icon_in_stock"></i>
+                  </div>
+                  <a href="javascript:addToShoppingCartStop('pro','31431',1,'2799000')" class="btn-cart-stop">
+                    Mua ngay
+                  </a>
+                </div><!--wrap_pro-->
+
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="hover_name">
+                      Camera IP không dây HikVision DS-2CD2842F-IW
+                    </a>
+                    
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><b>Giá bán:</b></td>
+                          <td>
+                            <span class="img_price_full">
+                              <span class="price-number-small-2"></span>
+                              <span class="price-number-small-dot"></span>
+                              <span class="price-number-small-7"></span>
+                              <span class="price-number-small-9"></span>
+                              <span class="price-number-small-9"></span>
+                              <span class="price-number-small-dot"></span>
+                              <span class="price-number-small-0"></span>
+                              <span class="price-number-small-0"></span>
+                              <span class="price-number-small-0"></span>
+                            </span>
+                            <span class="hover_vat"> [Đã bao gồm VAT] </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Bảo hành:</b></td><td>24T</td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Kho hàng:</b></td>
+                          <td>
+                            Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Mô tả tóm tắt:</b><br>
+                        + THƯƠMG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI - MODEL CAO CẤP<br>
+                        + Camera IP Cube Wifi hồng ngoại 2.0MP (All in One)<br>
+                        + Độ phân giải:  2.0 Megapixel, Cảm biến: 1/3" Progressive Scan CMOS<br>
+                        + Ống kính 2.8mm ( Đặt hàng: 4mm, 6mm). Độ nhạy sáng cao:0.01 Lux@F1.2. 0 Lux với IR. Tầm xa hồng ngoại nhìn đêm: 10m, Tầm xa cảm biến chống trộm: 10m<br>
+                        + Kết nối không dây Wifi hoặc có dây RJ45. Chống nhiễu kỹ thật số DNR, Chống ngược sáng kỹ thật số WDR, Cắt lọc hồng ngoại ICR . Tích hợp mic và loa trên camera.<br>
+                    </div>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Khuyến mại:</b><br>
+                        - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                    </div>
+                </div><!--hover_content_pro-->
+            </li>
+            
+            <li>
+                <div class="bg iconSaleOff"></div>
+                <div class="bg iconHot"></div>
+                
+                <!--<div class="icon-km"><span>KM</span></div>-->
+                <div class="p_container">
+                    <div class="p_sku">Mã SP: CAKM009</div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                      <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                    </a>
+                    <div class="p_price img_price">
+                      <span class="price-number-small-3"></span>
+                      <span class="price-number-small-dot"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-dot"></span>
+                    </div>
+                    <div class="container_old_price">
+                        <div class="p_old_price">4.999.000 VND</div>
+                        <div class="price_off">-20%</div>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <div class="p_quantity">
+                      <i class="bg icon_in_stock"></i>
+                    </div>
+                    <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                      Mua ngay
+                    </a>
+                </div><!--wrap_pro-->
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><b>Giá bán:</b></td>
+                          <td>
+                              <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                              <span class="hover_vat">
+                                  [Đã bao gồm VAT]
+                                  
+                              </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Bảo hành:</b></td><td></td>
+                        </tr>
+                        <tr>
+                          <td><b>Kho hàng:</b></td>
+                          <td>
+                            Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Mô tả tóm tắt:</b><br>
+                        + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                        + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                        + 01 Ổ cứng HDD 1000G<br>
+                        + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                        + 01 Nguồn cho Camera 12V-1A<br>
+                    </div>
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Khuyến mại:</b><br>
+                        - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                        
+                    </div>
+                    
+                </div><!--hover_content_pro-->
+            </li>
+
+            <li>
+                <div class="bg iconSaleOff"></div>
+                <div class="bg iconHot"></div>
+                
+                <!--<div class="icon-km"><span>KM</span></div>-->
+                <div class="p_container">
+                    <div class="p_sku">Mã SP: CAKM009</div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                      <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                    </a>
+                    <div class="p_price img_price">
+                      <span class="price-number-small-3"></span>
+                      <span class="price-number-small-dot"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-dot"></span>
+                    </div>
+                    <div class="container_old_price">
+                        <div class="p_old_price">4.999.000 VND</div>
+                        <div class="price_off">-20%</div>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <div class="p_quantity">
+                      <i class="bg icon_in_stock"></i>
+                    </div>
+                    <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                      Mua ngay
+                    </a>
+                </div><!--wrap_pro-->
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><b>Giá bán:</b></td>
+                          <td>
+                              <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                              <span class="hover_vat">
+                                  [Đã bao gồm VAT]
+                                  
+                              </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Bảo hành:</b></td><td></td>
+                        </tr>
+                        <tr>
+                          <td><b>Kho hàng:</b></td>
+                          <td>
+                            Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Mô tả tóm tắt:</b><br>
+                        + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                        + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                        + 01 Ổ cứng HDD 1000G<br>
+                        + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                        + 01 Nguồn cho Camera 12V-1A<br>
+                    </div>
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Khuyến mại:</b><br>
+                        - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                        
+                    </div>
+                    
+                </div><!--hover_content_pro-->
+            </li>
+
+            <li>
+                <div class="bg iconSaleOff"></div>
+                <div class="bg iconHot"></div>
+                
+                <!--<div class="icon-km"><span>KM</span></div>-->
+                <div class="p_container">
+                    <div class="p_sku">Mã SP: CAKM009</div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                      <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                    </a>
+                    <div class="p_price img_price">
+                      <span class="price-number-small-3"></span>
+                      <span class="price-number-small-dot"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-dot"></span>
+                    </div>
+                    <div class="container_old_price">
+                        <div class="p_old_price">4.999.000 VND</div>
+                        <div class="price_off">-20%</div>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <div class="p_quantity">
+                      <i class="bg icon_in_stock"></i>
+                    </div>
+                    <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                      Mua ngay
+                    </a>
+                </div><!--wrap_pro-->
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><b>Giá bán:</b></td>
+                          <td>
+                              <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                              <span class="hover_vat">
+                                  [Đã bao gồm VAT]
+                                  
+                              </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Bảo hành:</b></td><td></td>
+                        </tr>
+                        <tr>
+                          <td><b>Kho hàng:</b></td>
+                          <td>
+                            Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Mô tả tóm tắt:</b><br>
+                        + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                        + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                        + 01 Ổ cứng HDD 1000G<br>
+                        + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                        + 01 Nguồn cho Camera 12V-1A<br>
+                    </div>
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Khuyến mại:</b><br>
+                        - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                        
+                    </div>
+                    
+                </div><!--hover_content_pro-->
+            </li> 
+        </ul>
+        <ul id="tab3" class="ul cf">
+            <a href="http://www.hanoicomputer.vn/san-pham-moi" class="viewall">Xem tất cả &gt;&gt;</a>
+            <li>
+                <div class="bg iconSaleOff"></div>
+                <div class="bg iconHot"></div>
+                
+                <!--<div class="icon-km"><span>KM</span></div>-->
+                <div class="p_container">
+                  <div class="p_sku">Mã SP: CAHI083</div>
+                  <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_img">
+                    <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_31431_28765_cahi042_001.jpg" data-src="/media/product/250_31431_28765_cahi042_001.jpg" alt="Camera IP không dây HikVision DS-2CD2842F-IW" style="visibility: visible; opacity: 1;">
+                  </a>
+                  <div class="p_price img_price">
+                    <span class="price-number-small-2"></span>
+                    <span class="price-number-small-dot"></span>
+                    <span class="price-number-small-7"></span>
+                    <span class="price-number-small-9"></span>
+                    <span class="price-number-small-9"></span>
+                    <span class="price-number-small-dot"></span>
+                  </div>
+                  <div class="container_old_price">
+                      
+                  </div>
+                  <div class="clear"></div>
+                  <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_name">
+                    Camera IP không dây HikVision DS-2CD2842F-IW
+                  </a>
+                  <div class="p_quantity">
+                    <i class="bg icon_in_stock"></i>
+                  </div>
+                  <a href="javascript:addToShoppingCartStop('pro','31431',1,'2799000')" class="btn-cart-stop">
+                    Mua ngay
+                  </a>
+                </div><!--wrap_pro-->
+
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="hover_name">
+                      Camera IP không dây HikVision DS-2CD2842F-IW
+                    </a>
+                    
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><b>Giá bán:</b></td>
+                          <td>
+                            <span class="img_price_full">
+                              <span class="price-number-small-2"></span>
+                              <span class="price-number-small-dot"></span>
+                              <span class="price-number-small-7"></span>
+                              <span class="price-number-small-9"></span>
+                              <span class="price-number-small-9"></span>
+                              <span class="price-number-small-dot"></span>
+                              <span class="price-number-small-0"></span>
+                              <span class="price-number-small-0"></span>
+                              <span class="price-number-small-0"></span>
+                            </span>
+                            <span class="hover_vat"> [Đã bao gồm VAT] </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Bảo hành:</b></td><td>24T</td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Kho hàng:</b></td>
+                          <td>
+                            Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Mô tả tóm tắt:</b><br>
+                        + THƯƠMG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI - MODEL CAO CẤP<br>
+                        + Camera IP Cube Wifi hồng ngoại 2.0MP (All in One)<br>
+                        + Độ phân giải:  2.0 Megapixel, Cảm biến: 1/3" Progressive Scan CMOS<br>
+                        + Ống kính 2.8mm ( Đặt hàng: 4mm, 6mm). Độ nhạy sáng cao:0.01 Lux@F1.2. 0 Lux với IR. Tầm xa hồng ngoại nhìn đêm: 10m, Tầm xa cảm biến chống trộm: 10m<br>
+                        + Kết nối không dây Wifi hoặc có dây RJ45. Chống nhiễu kỹ thật số DNR, Chống ngược sáng kỹ thật số WDR, Cắt lọc hồng ngoại ICR . Tích hợp mic và loa trên camera.<br>
+                    </div>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Khuyến mại:</b><br>
+                        - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                    </div>
+                </div><!--hover_content_pro-->
+            </li>
+            <li>
+                <div class="bg iconSaleOff"></div>
+                <div class="bg iconHot"></div>
+                
+                <!--<div class="icon-km"><span>KM</span></div>-->
+                <div class="p_container">
+                  <div class="p_sku">Mã SP: CAHI083</div>
+                  <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_img">
+                    <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_31431_28765_cahi042_001.jpg" data-src="/media/product/250_31431_28765_cahi042_001.jpg" alt="Camera IP không dây HikVision DS-2CD2842F-IW" style="visibility: visible; opacity: 1;">
+                  </a>
+                  <div class="p_price img_price">
+                    <span class="price-number-small-2"></span>
+                    <span class="price-number-small-dot"></span>
+                    <span class="price-number-small-7"></span>
+                    <span class="price-number-small-9"></span>
+                    <span class="price-number-small-9"></span>
+                    <span class="price-number-small-dot"></span>
+                  </div>
+                  <div class="container_old_price">
+                      
+                  </div>
+                  <div class="clear"></div>
+                  <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_name">
+                    Camera IP không dây HikVision DS-2CD2842F-IW
+                  </a>
+                  <div class="p_quantity">
+                    <i class="bg icon_in_stock"></i>
+                  </div>
+                  <a href="javascript:addToShoppingCartStop('pro','31431',1,'2799000')" class="btn-cart-stop">
+                    Mua ngay
+                  </a>
+                </div><!--wrap_pro-->
+
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="hover_name">
+                      Camera IP không dây HikVision DS-2CD2842F-IW
+                    </a>
+                    
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><b>Giá bán:</b></td>
+                          <td>
+                            <span class="img_price_full">
+                              <span class="price-number-small-2"></span>
+                              <span class="price-number-small-dot"></span>
+                              <span class="price-number-small-7"></span>
+                              <span class="price-number-small-9"></span>
+                              <span class="price-number-small-9"></span>
+                              <span class="price-number-small-dot"></span>
+                              <span class="price-number-small-0"></span>
+                              <span class="price-number-small-0"></span>
+                              <span class="price-number-small-0"></span>
+                            </span>
+                            <span class="hover_vat"> [Đã bao gồm VAT] </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Bảo hành:</b></td><td>24T</td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Kho hàng:</b></td>
+                          <td>
+                            Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Mô tả tóm tắt:</b><br>
+                        + THƯƠMG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI - MODEL CAO CẤP<br>
+                        + Camera IP Cube Wifi hồng ngoại 2.0MP (All in One)<br>
+                        + Độ phân giải:  2.0 Megapixel, Cảm biến: 1/3" Progressive Scan CMOS<br>
+                        + Ống kính 2.8mm ( Đặt hàng: 4mm, 6mm). Độ nhạy sáng cao:0.01 Lux@F1.2. 0 Lux với IR. Tầm xa hồng ngoại nhìn đêm: 10m, Tầm xa cảm biến chống trộm: 10m<br>
+                        + Kết nối không dây Wifi hoặc có dây RJ45. Chống nhiễu kỹ thật số DNR, Chống ngược sáng kỹ thật số WDR, Cắt lọc hồng ngoại ICR . Tích hợp mic và loa trên camera.<br>
+                    </div>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Khuyến mại:</b><br>
+                        - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                    </div>
+                </div><!--hover_content_pro-->
+            </li>
+            
+            <li>
+                <div class="bg iconSaleOff"></div>
+                <div class="bg iconHot"></div>
+                
+                <!--<div class="icon-km"><span>KM</span></div>-->
+                <div class="p_container">
+                    <div class="p_sku">Mã SP: CAKM009</div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                      <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                    </a>
+                    <div class="p_price img_price">
+                      <span class="price-number-small-3"></span>
+                      <span class="price-number-small-dot"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-dot"></span>
+                    </div>
+                    <div class="container_old_price">
+                        <div class="p_old_price">4.999.000 VND</div>
+                        <div class="price_off">-20%</div>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <div class="p_quantity">
+                      <i class="bg icon_in_stock"></i>
+                    </div>
+                    <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                      Mua ngay
+                    </a>
+                </div><!--wrap_pro-->
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><b>Giá bán:</b></td>
+                          <td>
+                              <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                              <span class="hover_vat">
+                                  [Đã bao gồm VAT]
+                                  
+                              </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Bảo hành:</b></td><td></td>
+                        </tr>
+                        <tr>
+                          <td><b>Kho hàng:</b></td>
+                          <td>
+                            Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Mô tả tóm tắt:</b><br>
+                        + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                        + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                        + 01 Ổ cứng HDD 1000G<br>
+                        + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                        + 01 Nguồn cho Camera 12V-1A<br>
+                    </div>
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Khuyến mại:</b><br>
+                        - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                        
+                    </div>
+                    
+                </div><!--hover_content_pro-->
+            </li>
+
+            <li>
+                <div class="bg iconSaleOff"></div>
+                <div class="bg iconHot"></div>
+                
+                <!--<div class="icon-km"><span>KM</span></div>-->
+                <div class="p_container">
+                    <div class="p_sku">Mã SP: CAKM009</div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                      <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                    </a>
+                    <div class="p_price img_price">
+                      <span class="price-number-small-3"></span>
+                      <span class="price-number-small-dot"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-dot"></span>
+                    </div>
+                    <div class="container_old_price">
+                        <div class="p_old_price">4.999.000 VND</div>
+                        <div class="price_off">-20%</div>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <div class="p_quantity">
+                      <i class="bg icon_in_stock"></i>
+                    </div>
+                    <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                      Mua ngay
+                    </a>
+                </div><!--wrap_pro-->
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><b>Giá bán:</b></td>
+                          <td>
+                              <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                              <span class="hover_vat">
+                                  [Đã bao gồm VAT]
+                                  
+                              </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Bảo hành:</b></td><td></td>
+                        </tr>
+                        <tr>
+                          <td><b>Kho hàng:</b></td>
+                          <td>
+                            Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Mô tả tóm tắt:</b><br>
+                        + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                        + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                        + 01 Ổ cứng HDD 1000G<br>
+                        + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                        + 01 Nguồn cho Camera 12V-1A<br>
+                    </div>
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Khuyến mại:</b><br>
+                        - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                        
+                    </div>
+                    
+                </div><!--hover_content_pro-->
+            </li>
+
+            <li>
+                <div class="bg iconSaleOff"></div>
+                <div class="bg iconHot"></div>
+                
+                <!--<div class="icon-km"><span>KM</span></div>-->
+                <div class="p_container">
+                    <div class="p_sku">Mã SP: CAKM009</div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                      <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                    </a>
+                    <div class="p_price img_price">
+                      <span class="price-number-small-3"></span>
+                      <span class="price-number-small-dot"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-9"></span>
+                      <span class="price-number-small-dot"></span>
+                    </div>
+                    <div class="container_old_price">
+                        <div class="p_old_price">4.999.000 VND</div>
+                        <div class="price_off">-20%</div>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <div class="p_quantity">
+                      <i class="bg icon_in_stock"></i>
+                    </div>
+                    <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                      Mua ngay
+                    </a>
+                </div><!--wrap_pro-->
+                <div class="hover_content_pro tooltip" style="display: none;">
+                    <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                      TRỌN BỘ KÍT CAMERA HD HIKVISION
+                    </a>
+                    <a href="" class="hover_brand">
+                      <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                    </a>
+                    
+                    <div class="hori_line"></div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><b>Giá bán:</b></td>
+                          <td>
+                              <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                              <span class="hover_vat">
+                                  [Đã bao gồm VAT]
+                                  
+                              </span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Bảo hành:</b></td><td></td>
+                        </tr>
+                        <tr>
+                          <td><b>Kho hàng:</b></td>
+                          <td>
+                            Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Mô tả tóm tắt:</b><br>
+                        + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                        + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                        + 01 Ổ cứng HDD 1000G<br>
+                        + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                        + 01 Nguồn cho Camera 12V-1A<br>
+                    </div>
+                    <div class="hori_line"></div>
+                    <div class="hover_offer">
+                        <b>Khuyến mại:</b><br>
+                        - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                        
+                    </div>
+                    
+                </div><!--hover_content_pro-->
+            </li> 
+        </ul>
+      -->
+      </div><!--prouduct_list-->
+    </div><!--content_tab-->
+  </div><!--box_pro_special_home-->
+  <!--hot_news_home-->
+  
+  <div class="clear"></div>
+  <div class="title_box_center">
+      <h2 class="cufon h_title">
+        <cufon class="cufon cufon-canvas" alt="Laptop, " style="width: 51px; height: 19px;"><canvas width="63" height="24" style="width: 63px; height: 24px; top: -5px; left: -1px;"></canvas><cufontext>Laptop, </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Phụ " style="width: 27px; height: 19px;"><canvas width="39" height="24" style="width: 39px; height: 24px; top: -5px; left: -1px;"></canvas><cufontext>Phụ </cufontext></cufon><cufon class="cufon cufon-canvas" alt="kiện" style="width: 28px; height: 19px;"><canvas width="34" height="24" style="width: 34px; height: 24px; top: -5px; left: -1px;"></canvas><cufontext>kiện</cufontext>
+        </cufon>
+        </h2>
+      <div class="sub_cat_title">
+          <a href="http://www.hanoicomputer.vn/laptop/c3.html">Laptop</a>
+          <a href="http://www.hanoicomputer.vn/linh-phu-kien-laptop/c57.html">Linh, phụ kiện laptop</a>
+          <a href="http://www.hanoicomputer.vn/phu-kien-may-tinh-bang/c114.html">Phụ kiện tablet, mobile</a>
+      </div>
+      <a href="http://www.hanoicomputer.vn/collection/laptop-mobile-tablet" class="viewall">Xem tất cả</a>
+  </div><!--title_box_center-->
+  <div class="bg_gradient_bottom_title"></div>
+  <div class="banner_top_pro"></div>
+
+  <div class="clear space"></div>
+  <div class="product_list float_l" style="width:940px;">
+      <ul class="ul">
+        <li>
+            <div class="bg iconSaleOff"></div>
+            <div class="bg iconHot"></div>
+            
+            <!--<div class="icon-km"><span>KM</span></div>-->
+            <div class="p_container">
+              <div class="p_sku">Mã SP: CAHI083</div>
+              <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_img">
+                <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_31431_28765_cahi042_001.jpg" data-src="/media/product/250_31431_28765_cahi042_001.jpg" alt="Camera IP không dây HikVision DS-2CD2842F-IW" style="visibility: visible; opacity: 1;">
+              </a>
+              <div class="p_price img_price">
+                <span class="price-number-small-2"></span>
+                <span class="price-number-small-dot"></span>
+                <span class="price-number-small-7"></span>
+                <span class="price-number-small-9"></span>
+                <span class="price-number-small-9"></span>
+                <span class="price-number-small-dot"></span>
+              </div>
+              <div class="container_old_price">
+                  
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_name">
+                Camera IP không dây HikVision DS-2CD2842F-IW
+              </a>
+              <div class="p_quantity">
+                <i class="bg icon_in_stock"></i>
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','31431',1,'2799000')" class="btn-cart-stop">
+                Mua ngay
+              </a>
+            </div><!--wrap_pro-->
+
+            <div class="hover_content_pro tooltip" style="display: none;">
+                <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="hover_name">
+                  Camera IP không dây HikVision DS-2CD2842F-IW
+                </a>
+                
+                <a href="" class="hover_brand">
+                  <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                </a>
+                
+                <div class="hori_line"></div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                        <span class="img_price_full">
+                          <span class="price-number-small-2"></span>
+                          <span class="price-number-small-dot"></span>
+                          <span class="price-number-small-7"></span>
+                          <span class="price-number-small-9"></span>
+                          <span class="price-number-small-9"></span>
+                          <span class="price-number-small-dot"></span>
+                          <span class="price-number-small-0"></span>
+                          <span class="price-number-small-0"></span>
+                          <span class="price-number-small-0"></span>
+                        </span>
+                        <span class="hover_vat"> [Đã bao gồm VAT] </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Bảo hành:</b></td><td>24T</td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Kho hàng:</b></td>
+                      <td>
+                        Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Mô tả tóm tắt:</b><br>
+                    + THƯƠMG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI - MODEL CAO CẤP<br>
+                    + Camera IP Cube Wifi hồng ngoại 2.0MP (All in One)<br>
+                    + Độ phân giải:  2.0 Megapixel, Cảm biến: 1/3" Progressive Scan CMOS<br>
+                    + Ống kính 2.8mm ( Đặt hàng: 4mm, 6mm). Độ nhạy sáng cao:0.01 Lux@F1.2. 0 Lux với IR. Tầm xa hồng ngoại nhìn đêm: 10m, Tầm xa cảm biến chống trộm: 10m<br>
+                    + Kết nối không dây Wifi hoặc có dây RJ45. Chống nhiễu kỹ thật số DNR, Chống ngược sáng kỹ thật số WDR, Cắt lọc hồng ngoại ICR . Tích hợp mic và loa trên camera.<br>
+                </div>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Khuyến mại:</b><br>
+                    - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                </div>
+            </div><!--hover_content_pro-->
+        </li>
+        <li>
+            <div class="bg iconSaleOff"></div>
+            <div class="bg iconHot"></div>
+            
+            <!--<div class="icon-km"><span>KM</span></div>-->
+            <div class="p_container">
+              <div class="p_sku">Mã SP: CAHI083</div>
+              <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_img">
+                <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_31431_28765_cahi042_001.jpg" data-src="/media/product/250_31431_28765_cahi042_001.jpg" alt="Camera IP không dây HikVision DS-2CD2842F-IW" style="visibility: visible; opacity: 1;">
+              </a>
+              <div class="p_price img_price">
+                <span class="price-number-small-2"></span>
+                <span class="price-number-small-dot"></span>
+                <span class="price-number-small-7"></span>
+                <span class="price-number-small-9"></span>
+                <span class="price-number-small-9"></span>
+                <span class="price-number-small-dot"></span>
+              </div>
+              <div class="container_old_price">
+                  
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_name">
+                Camera IP không dây HikVision DS-2CD2842F-IW
+              </a>
+              <div class="p_quantity">
+                <i class="bg icon_in_stock"></i>
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','31431',1,'2799000')" class="btn-cart-stop">
+                Mua ngay
+              </a>
+            </div><!--wrap_pro-->
+
+            <div class="hover_content_pro tooltip" style="display: none;">
+                <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="hover_name">
+                  Camera IP không dây HikVision DS-2CD2842F-IW
+                </a>
+                
+                <a href="" class="hover_brand">
+                  <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                </a>
+                
+                <div class="hori_line"></div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                        <span class="img_price_full">
+                          <span class="price-number-small-2"></span>
+                          <span class="price-number-small-dot"></span>
+                          <span class="price-number-small-7"></span>
+                          <span class="price-number-small-9"></span>
+                          <span class="price-number-small-9"></span>
+                          <span class="price-number-small-dot"></span>
+                          <span class="price-number-small-0"></span>
+                          <span class="price-number-small-0"></span>
+                          <span class="price-number-small-0"></span>
+                        </span>
+                        <span class="hover_vat"> [Đã bao gồm VAT] </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Bảo hành:</b></td><td>24T</td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Kho hàng:</b></td>
+                      <td>
+                        Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Mô tả tóm tắt:</b><br>
+                    + THƯƠMG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI - MODEL CAO CẤP<br>
+                    + Camera IP Cube Wifi hồng ngoại 2.0MP (All in One)<br>
+                    + Độ phân giải:  2.0 Megapixel, Cảm biến: 1/3" Progressive Scan CMOS<br>
+                    + Ống kính 2.8mm ( Đặt hàng: 4mm, 6mm). Độ nhạy sáng cao:0.01 Lux@F1.2. 0 Lux với IR. Tầm xa hồng ngoại nhìn đêm: 10m, Tầm xa cảm biến chống trộm: 10m<br>
+                    + Kết nối không dây Wifi hoặc có dây RJ45. Chống nhiễu kỹ thật số DNR, Chống ngược sáng kỹ thật số WDR, Cắt lọc hồng ngoại ICR . Tích hợp mic và loa trên camera.<br>
+                </div>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Khuyến mại:</b><br>
+                    - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                </div>
+            </div><!--hover_content_pro-->
+        </li>
+        
+        <li>
+            <div class="bg iconSaleOff"></div>
+            <div class="bg iconHot"></div>
+            
+            <!--<div class="icon-km"><span>KM</span></div>-->
+            <div class="p_container">
+                <div class="p_sku">Mã SP: CAKM009</div>
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                  <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                </a>
+                <div class="p_price img_price">
+                  <span class="price-number-small-3"></span>
+                  <span class="price-number-small-dot"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-dot"></span>
+                </div>
+                <div class="container_old_price">
+                    <div class="p_old_price">4.999.000 VND</div>
+                    <div class="price_off">-20%</div>
+                </div>
+                <div class="clear"></div>
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                  TRỌN BỘ KÍT CAMERA HD HIKVISION
+                </a>
+                <div class="p_quantity">
+                  <i class="bg icon_in_stock"></i>
+                </div>
+                <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                  Mua ngay
+                </a>
+            </div><!--wrap_pro-->
+            <div class="hover_content_pro tooltip" style="display: none;">
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                  TRỌN BỘ KÍT CAMERA HD HIKVISION
+                </a>
+                <a href="" class="hover_brand">
+                  <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                </a>
+                
+                <div class="hori_line"></div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Bảo hành:</b></td><td></td>
+                    </tr>
+                    <tr>
+                      <td><b>Kho hàng:</b></td>
+                      <td>
+                        Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Mô tả tóm tắt:</b><br>
+                    + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                    + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                    + 01 Ổ cứng HDD 1000G<br>
+                    + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                    + 01 Nguồn cho Camera 12V-1A<br>
+                </div>
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Khuyến mại:</b><br>
+                    - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                    
+                </div>
+                
+            </div><!--hover_content_pro-->
+        </li>
+
+        <li>
+            <div class="bg iconSaleOff"></div>
+            <div class="bg iconHot"></div>
+            
+            <!--<div class="icon-km"><span>KM</span></div>-->
+            <div class="p_container">
+                <div class="p_sku">Mã SP: CAKM009</div>
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                  <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                </a>
+                <div class="p_price img_price">
+                  <span class="price-number-small-3"></span>
+                  <span class="price-number-small-dot"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-dot"></span>
+                </div>
+                <div class="container_old_price">
+                    <div class="p_old_price">4.999.000 VND</div>
+                    <div class="price_off">-20%</div>
+                </div>
+                <div class="clear"></div>
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                  TRỌN BỘ KÍT CAMERA HD HIKVISION
+                </a>
+                <div class="p_quantity">
+                  <i class="bg icon_in_stock"></i>
+                </div>
+                <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                  Mua ngay
+                </a>
+            </div><!--wrap_pro-->
+            <div class="hover_content_pro tooltip" style="display: none;">
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                  TRỌN BỘ KÍT CAMERA HD HIKVISION
+                </a>
+                <a href="" class="hover_brand">
+                  <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                </a>
+                
+                <div class="hori_line"></div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Bảo hành:</b></td><td></td>
+                    </tr>
+                    <tr>
+                      <td><b>Kho hàng:</b></td>
+                      <td>
+                        Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Mô tả tóm tắt:</b><br>
+                    + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                    + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                    + 01 Ổ cứng HDD 1000G<br>
+                    + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                    + 01 Nguồn cho Camera 12V-1A<br>
+                </div>
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Khuyến mại:</b><br>
+                    - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                    
+                </div>
+                
+            </div><!--hover_content_pro-->
+        </li>
+
+        <li>
+            <div class="bg iconSaleOff"></div>
+            <div class="bg iconHot"></div>
+            
+            <!--<div class="icon-km"><span>KM</span></div>-->
+            <div class="p_container">
+                <div class="p_sku">Mã SP: CAKM009</div>
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                  <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                </a>
+                <div class="p_price img_price">
+                  <span class="price-number-small-3"></span>
+                  <span class="price-number-small-dot"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-dot"></span>
+                </div>
+                <div class="container_old_price">
+                    <div class="p_old_price">4.999.000 VND</div>
+                    <div class="price_off">-20%</div>
+                </div>
+                <div class="clear"></div>
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                  TRỌN BỘ KÍT CAMERA HD HIKVISION
+                </a>
+                <div class="p_quantity">
+                  <i class="bg icon_in_stock"></i>
+                </div>
+                <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                  Mua ngay
+                </a>
+            </div><!--wrap_pro-->
+            <div class="hover_content_pro tooltip" style="display: none;">
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                  TRỌN BỘ KÍT CAMERA HD HIKVISION
+                </a>
+                <a href="" class="hover_brand">
+                  <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                </a>
+                
+                <div class="hori_line"></div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Bảo hành:</b></td><td></td>
+                    </tr>
+                    <tr>
+                      <td><b>Kho hàng:</b></td>
+                      <td>
+                        Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Mô tả tóm tắt:</b><br>
+                    + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                    + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                    + 01 Ổ cứng HDD 1000G<br>
+                    + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                    + 01 Nguồn cho Camera 12V-1A<br>
+                </div>
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Khuyến mại:</b><br>
+                    - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                    
+                </div>
+                
+            </div><!--hover_content_pro-->
+        </li> 
+      
+      </ul>
+  </div><!--prouduct_list-->
+  <div class="banner_right_pro">
+    
+    <a href="http://www.hanoicomputer.vn/tin-khuyen-mai/khoi-dau-an-tuong-cung-asus/a1022.html"><img class="lazy" data-src="http://www.hanoicomputer.vn/media/banner/banner_23350907.jpg" alt="" style="visibility: visible; opacity: 1;" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/banner_23350907.jpg"></a>
+    
+  </div>
+  <div class="clear space"></div>
+    
+  <div class="clear"></div>
+  <div class="title_box_center">
+      <h2 class="cufon h_title"><cufon class="cufon cufon-canvas" alt="PC, " style="width: 22px; height: 19px;"><canvas width="34" height="24" style="width: 34px; height: 24px; top: -5px; left: -1px;"></canvas><cufontext>PC, </cufontext></cufon><cufon class="cufon cufon-canvas" alt="WORKSTATIONS, " style="width: 98px; height: 19px;"><canvas width="110" height="24" style="width: 110px; height: 24px; top: -5px; left: -1px;"></canvas><cufontext>WORKSTATIONS, </cufontext></cufon><cufon class="cufon cufon-canvas" alt="GAMING" style="width: 46px; height: 19px;"><canvas width="54" height="24" style="width: 54px; height: 24px; top: -5px; left: -1px;"></canvas><cufontext>GAMING</cufontext></cufon></h2>
+      <div class="sub_cat_title">
+          <a href="http://www.hanoicomputer.vn/may-bo-thuong-hieu/c4.html">Máy tính đồng bộ</a>
+          <a href="http://www.hanoicomputer.vn/may-tram-workstations/c177.html">PC Workstations Pro</a>
+          <a href="http://www.hanoicomputer.vn/pc-van-phong-officer/c359.html">PC Văn Phòng - Officer</a>
+          <a href="http://www.hanoicomputer.vn/may-game-thu-pro/c178.html">PC Gaming Pro - Extreme</a>
+          <a href="http://www.hanoicomputer.vn/combo-set-multi-color-editon/c363.html">Combo Set Multi Color Editon</a>
+      </div>
+      <a href="http://www.hanoicomputer.vn/collection/pc-workstation-gaming" class="viewall">Xem tất cả</a>
+  </div><!--title_box_center-->
+  <div class="bg_gradient_bottom_title"></div>
+  <div class="banner_top_pro"></div>
+
+  <div class="clear space"></div>
+  <div class="product_list float_l" style="width:940px;">
+      <ul class="ul">
+        <li>
+            <div class="bg iconSaleOff"></div>
+            <div class="bg iconHot"></div>
+            
+            <!--<div class="icon-km"><span>KM</span></div>-->
+            <div class="p_container">
+              <div class="p_sku">Mã SP: CAHI083</div>
+              <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_img">
+                <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_31431_28765_cahi042_001.jpg" data-src="/media/product/250_31431_28765_cahi042_001.jpg" alt="Camera IP không dây HikVision DS-2CD2842F-IW" style="visibility: visible; opacity: 1;">
+              </a>
+              <div class="p_price img_price">
+                <span class="price-number-small-2"></span>
+                <span class="price-number-small-dot"></span>
+                <span class="price-number-small-7"></span>
+                <span class="price-number-small-9"></span>
+                <span class="price-number-small-9"></span>
+                <span class="price-number-small-dot"></span>
+              </div>
+              <div class="container_old_price">
+                  
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_name">
+                Camera IP không dây HikVision DS-2CD2842F-IW
+              </a>
+              <div class="p_quantity">
+                <i class="bg icon_in_stock"></i>
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','31431',1,'2799000')" class="btn-cart-stop">
+                Mua ngay
+              </a>
+            </div><!--wrap_pro-->
+
+            <div class="hover_content_pro tooltip" style="display: none;">
+                <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="hover_name">
+                  Camera IP không dây HikVision DS-2CD2842F-IW
+                </a>
+                
+                <a href="" class="hover_brand">
+                  <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                </a>
+                
+                <div class="hori_line"></div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                        <span class="img_price_full">
+                          <span class="price-number-small-2"></span>
+                          <span class="price-number-small-dot"></span>
+                          <span class="price-number-small-7"></span>
+                          <span class="price-number-small-9"></span>
+                          <span class="price-number-small-9"></span>
+                          <span class="price-number-small-dot"></span>
+                          <span class="price-number-small-0"></span>
+                          <span class="price-number-small-0"></span>
+                          <span class="price-number-small-0"></span>
+                        </span>
+                        <span class="hover_vat"> [Đã bao gồm VAT] </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Bảo hành:</b></td><td>24T</td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Kho hàng:</b></td>
+                      <td>
+                        Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Mô tả tóm tắt:</b><br>
+                    + THƯƠMG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI - MODEL CAO CẤP<br>
+                    + Camera IP Cube Wifi hồng ngoại 2.0MP (All in One)<br>
+                    + Độ phân giải:  2.0 Megapixel, Cảm biến: 1/3" Progressive Scan CMOS<br>
+                    + Ống kính 2.8mm ( Đặt hàng: 4mm, 6mm). Độ nhạy sáng cao:0.01 Lux@F1.2. 0 Lux với IR. Tầm xa hồng ngoại nhìn đêm: 10m, Tầm xa cảm biến chống trộm: 10m<br>
+                    + Kết nối không dây Wifi hoặc có dây RJ45. Chống nhiễu kỹ thật số DNR, Chống ngược sáng kỹ thật số WDR, Cắt lọc hồng ngoại ICR . Tích hợp mic và loa trên camera.<br>
+                </div>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Khuyến mại:</b><br>
+                    - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                </div>
+            </div><!--hover_content_pro-->
+        </li>
+        <li>
+            <div class="bg iconSaleOff"></div>
+            <div class="bg iconHot"></div>
+            
+            <!--<div class="icon-km"><span>KM</span></div>-->
+            <div class="p_container">
+              <div class="p_sku">Mã SP: CAHI083</div>
+              <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_img">
+                <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_31431_28765_cahi042_001.jpg" data-src="/media/product/250_31431_28765_cahi042_001.jpg" alt="Camera IP không dây HikVision DS-2CD2842F-IW" style="visibility: visible; opacity: 1;">
+              </a>
+              <div class="p_price img_price">
+                <span class="price-number-small-2"></span>
+                <span class="price-number-small-dot"></span>
+                <span class="price-number-small-7"></span>
+                <span class="price-number-small-9"></span>
+                <span class="price-number-small-9"></span>
+                <span class="price-number-small-dot"></span>
+              </div>
+              <div class="container_old_price">
+                  
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="p_name">
+                Camera IP không dây HikVision DS-2CD2842F-IW
+              </a>
+              <div class="p_quantity">
+                <i class="bg icon_in_stock"></i>
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','31431',1,'2799000')" class="btn-cart-stop">
+                Mua ngay
+              </a>
+            </div><!--wrap_pro-->
+
+            <div class="hover_content_pro tooltip" style="display: none;">
+                <a href="http://www.hanoicomputer.vn/camera-ip-hikvision-ds-2cd2842f-iw/p31431.html" class="hover_name">
+                  Camera IP không dây HikVision DS-2CD2842F-IW
+                </a>
+                
+                <a href="" class="hover_brand">
+                  <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                </a>
+                
+                <div class="hori_line"></div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                        <span class="img_price_full">
+                          <span class="price-number-small-2"></span>
+                          <span class="price-number-small-dot"></span>
+                          <span class="price-number-small-7"></span>
+                          <span class="price-number-small-9"></span>
+                          <span class="price-number-small-9"></span>
+                          <span class="price-number-small-dot"></span>
+                          <span class="price-number-small-0"></span>
+                          <span class="price-number-small-0"></span>
+                          <span class="price-number-small-0"></span>
+                        </span>
+                        <span class="hover_vat"> [Đã bao gồm VAT] </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Bảo hành:</b></td><td>24T</td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Kho hàng:</b></td>
+                      <td>
+                        Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Mô tả tóm tắt:</b><br>
+                    + THƯƠMG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI - MODEL CAO CẤP<br>
+                    + Camera IP Cube Wifi hồng ngoại 2.0MP (All in One)<br>
+                    + Độ phân giải:  2.0 Megapixel, Cảm biến: 1/3" Progressive Scan CMOS<br>
+                    + Ống kính 2.8mm ( Đặt hàng: 4mm, 6mm). Độ nhạy sáng cao:0.01 Lux@F1.2. 0 Lux với IR. Tầm xa hồng ngoại nhìn đêm: 10m, Tầm xa cảm biến chống trộm: 10m<br>
+                    + Kết nối không dây Wifi hoặc có dây RJ45. Chống nhiễu kỹ thật số DNR, Chống ngược sáng kỹ thật số WDR, Cắt lọc hồng ngoại ICR . Tích hợp mic và loa trên camera.<br>
+                </div>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Khuyến mại:</b><br>
+                    - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                </div>
+            </div><!--hover_content_pro-->
+        </li>
+        
+        <li>
+            <div class="bg iconSaleOff"></div>
+            <div class="bg iconHot"></div>
+            
+            <!--<div class="icon-km"><span>KM</span></div>-->
+            <div class="p_container">
+                <div class="p_sku">Mã SP: CAKM009</div>
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                  <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                </a>
+                <div class="p_price img_price">
+                  <span class="price-number-small-3"></span>
+                  <span class="price-number-small-dot"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-dot"></span>
+                </div>
+                <div class="container_old_price">
+                    <div class="p_old_price">4.999.000 VND</div>
+                    <div class="price_off">-20%</div>
+                </div>
+                <div class="clear"></div>
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                  TRỌN BỘ KÍT CAMERA HD HIKVISION
+                </a>
+                <div class="p_quantity">
+                  <i class="bg icon_in_stock"></i>
+                </div>
+                <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                  Mua ngay
+                </a>
+            </div><!--wrap_pro-->
+            <div class="hover_content_pro tooltip" style="display: none;">
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                  TRỌN BỘ KÍT CAMERA HD HIKVISION
+                </a>
+                <a href="" class="hover_brand">
+                  <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                </a>
+                
+                <div class="hori_line"></div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Bảo hành:</b></td><td></td>
+                    </tr>
+                    <tr>
+                      <td><b>Kho hàng:</b></td>
+                      <td>
+                        Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Mô tả tóm tắt:</b><br>
+                    + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                    + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                    + 01 Ổ cứng HDD 1000G<br>
+                    + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                    + 01 Nguồn cho Camera 12V-1A<br>
+                </div>
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Khuyến mại:</b><br>
+                    - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                    
+                </div>
+                
+            </div><!--hover_content_pro-->
+        </li>
+
+        <li>
+            <div class="bg iconSaleOff"></div>
+            <div class="bg iconHot"></div>
+            
+            <!--<div class="icon-km"><span>KM</span></div>-->
+            <div class="p_container">
+                <div class="p_sku">Mã SP: CAKM009</div>
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                  <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                </a>
+                <div class="p_price img_price">
+                  <span class="price-number-small-3"></span>
+                  <span class="price-number-small-dot"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-dot"></span>
+                </div>
+                <div class="container_old_price">
+                    <div class="p_old_price">4.999.000 VND</div>
+                    <div class="price_off">-20%</div>
+                </div>
+                <div class="clear"></div>
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                  TRỌN BỘ KÍT CAMERA HD HIKVISION
+                </a>
+                <div class="p_quantity">
+                  <i class="bg icon_in_stock"></i>
+                </div>
+                <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                  Mua ngay
+                </a>
+            </div><!--wrap_pro-->
+            <div class="hover_content_pro tooltip" style="display: none;">
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                  TRỌN BỘ KÍT CAMERA HD HIKVISION
+                </a>
+                <a href="" class="hover_brand">
+                  <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                </a>
+                
+                <div class="hori_line"></div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Bảo hành:</b></td><td></td>
+                    </tr>
+                    <tr>
+                      <td><b>Kho hàng:</b></td>
+                      <td>
+                        Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Mô tả tóm tắt:</b><br>
+                    + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                    + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                    + 01 Ổ cứng HDD 1000G<br>
+                    + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                    + 01 Nguồn cho Camera 12V-1A<br>
+                </div>
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Khuyến mại:</b><br>
+                    - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                    
+                </div>
+                
+            </div><!--hover_content_pro-->
+        </li>
+
+        <li>
+            <div class="bg iconSaleOff"></div>
+            <div class="bg iconHot"></div>
+            
+            <!--<div class="icon-km"><span>KM</span></div>-->
+            <div class="p_container">
+                <div class="p_sku">Mã SP: CAKM009</div>
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_img">
+                  <img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/250_27005_bo_cam_hd_hik.jpg" data-src="/media/product/250_27005_bo_cam_hd_hik.jpg" alt="TRỌN BỘ KÍT CAMERA HD HIKVISION" style="visibility: visible; opacity: 1;">
+                </a>
+                <div class="p_price img_price">
+                  <span class="price-number-small-3"></span>
+                  <span class="price-number-small-dot"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-9"></span>
+                  <span class="price-number-small-dot"></span>
+                </div>
+                <div class="container_old_price">
+                    <div class="p_old_price">4.999.000 VND</div>
+                    <div class="price_off">-20%</div>
+                </div>
+                <div class="clear"></div>
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="p_name">
+                  TRỌN BỘ KÍT CAMERA HD HIKVISION
+                </a>
+                <div class="p_quantity">
+                  <i class="bg icon_in_stock"></i>
+                </div>
+                <a href="javascript:addToShoppingCartStop('pro','27005',1,'3999000')" class="btn-cart-stop">
+                  Mua ngay
+                </a>
+            </div><!--wrap_pro-->
+            <div class="hover_content_pro tooltip" style="display: none;">
+                <a href="http://www.hanoicomputer.vn/tron-bo-kit-camere-hd-hikvision/p27005.html" class="hover_name">
+                  TRỌN BỘ KÍT CAMERA HD HIKVISION
+                </a>
+                <a href="" class="hover_brand">
+                  <img src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/hikvision.jpg" alt="">
+                </a>
+                
+                <div class="hori_line"></div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-3"></span><span class="price-number-small-dot"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td><b>Bảo hành:</b></td><td></td>
+                    </tr>
+                    <tr>
+                      <td><b>Kho hàng:</b></td>
+                      <td>
+                        Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Mô tả tóm tắt:</b><br>
+                    + THƯƠNG HIỆU CAMERA BÁN CHẠY NHẤT THẾ GIỚI<br>
+                    + 01 Camera Dome TVI HikVision DS-2HN56C8T-IRM (lõi bằng thép tản nhiệt tốt )<br>
+                    + 01 Ổ cứng HDD 1000G<br>
+                    + 01 Đầu ghi 4 kênh HikVisionHD TVI DS-7104TVI ( Chuẩn nén H264+ tiết kiệm 40% dung lượng lưu trữ video )<br>
+                    + 01 Nguồn cho Camera 12V-1A<br>
+                </div>
+                <div class="hori_line"></div>
+                <div class="hover_offer">
+                    <b>Khuyến mại:</b><br>
+                    - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                    
+                </div>
+                
+            </div><!--hover_content_pro-->
+        </li> 
+      </ul>
+  </div><!--prouduct_list-->
+
+  
+  <div class="clear"></div>
+  <div class="title_box_center">
+    <h2 class="cufon h_title"><cufon class="cufon cufon-canvas" alt="THIÊT " style="width: 37px; height: 19px;"><canvas width="49" height="24" style="width: 49px; height: 24px; top: -5px; left: -1px;"></canvas><cufontext>THIÊT </cufontext></cufon><cufon class="cufon cufon-canvas" alt="BỊ " style="width: 15px; height: 19px;"><canvas width="27" height="24" style="width: 27px; height: 24px; top: -5px; left: -1px;"></canvas><cufontext>BỊ </cufontext></cufon><cufon class="cufon cufon-canvas" alt="LƯU " style="width: 26px; height: 19px;"><canvas width="38" height="24" style="width: 38px; height: 24px; top: -5px; left: -1px;"></canvas><cufontext>LƯU </cufontext></cufon><cufon class="cufon cufon-canvas" alt="TRỮ" style="width: 23px; height: 19px;"><canvas width="30" height="24" style="width: 30px; height: 24px; top: -5px; left: -1px;"></canvas><cufontext>TRỮ</cufontext></cufon></h2>
+    <div class="sub_cat_title">
+        
+        
+        <a href="http://www.hanoicomputer.vn/o-cung-cam-trong/c229.html">Ổ cứng cắm trong</a>
+        
+        
+        
+        <a href="http://www.hanoicomputer.vn/o-cung-cam-ngoai/c232.html">Ổ cứng cắm ngoài</a>
+        
+        
+        
+        <a href="http://www.hanoicomputer.vn/o-cung-ssd/c233.html">Ổ cứng SSD</a>
+        
+        
+        
+        <a href="http://www.hanoicomputer.vn/phu-kien-hdd/c236.html">Phụ kiện HDD</a>
+        
+        
+        
+        <a href="http://www.hanoicomputer.vn/usb-flash/c237.html">USB Flash</a>
+        
+        
+        
+        <a href="http://www.hanoicomputer.vn/the-nho/c19.html">Thẻ nhớ</a>
+        
+        
+        
+        <a href="http://www.hanoicomputer.vn/card-reader/c124.html">Card Reader </a>
+        
+        
+        
+        <a href="http://www.hanoicomputer.vn/phu-kien-cac-loai/c303.html">Phụ Kiện Các Loại</a>
+        
+        
+    </div>
+    <a href="http://www.hanoicomputer.vn/collection/thiet-bi-luu-tru" class="viewall">Xem tất cả</a>
+  </div><!--title_box_center-->
+  <div class="bg_gradient_bottom_title"></div>
+  <div class="banner_top_pro"></div>
+
+  <div class="clear space"></div>
+  <div class="product_list float_l" style="width:940px;">
+    <ul class="ul">
+      <li class="nomar_l">
+          <!---->
+          <div class="p_container">
+              <div class="p_sku">Mã SP: HDAV002</div>
+              <a href="http://www.hanoicomputer.vn/ssd-avexir-e100-120gb-sata3-6gbs-25-read-up-to-550mbs-write-up-to-370mbs/p31701.html" class="p_img"><img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/blank.gif" data-src="/media/product/250_31701_ssd_avexir_e100_120gb.jpg" alt="SSD AVEXIR E100 120GB SATA3 6Gb/s 2.5&quot; (Read 550MB/s, Write 370MB/s)" style="visibility: hidden; opacity: 0;"></a>
+              <div class="p_price img_price"><span class="price-number-small-1"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span></div>
+              <div class="container_old_price">
+                  
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/ssd-avexir-e100-120gb-sata3-6gbs-25-read-up-to-550mbs-write-up-to-370mbs/p31701.html" class="p_name">SSD AVEXIR E100 120GB SATA3 6Gb/s 2.5" (Read 550MB/s, Write 370MB/s)</a>
+              <div class="p_quantity">
+                  
+                      <i class="bg icon_in_stock"></i>
+                  
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','31701',1,'1099000')" class="btn-cart-stop">Mua ngay</a>
+          </div><!--wrap_pro-->
+          <!--0-->
+          <div class="hover_content_pro tooltip" style="display: none;">
+              <a href="http://www.hanoicomputer.vn/ssd-avexir-e100-120gb-sata3-6gbs-25-read-up-to-550mbs-write-up-to-370mbs/p31701.html" class="hover_name">SSD AVEXIR E100 120GB SATA3 6Gb/s 2.5" (Read 550MB/s, Write 370MB/s)</a>
+              
+              <div class="hori_line"></div>
+              <table>
+                  <tbody><tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-1"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                  </tr>
+                  <tr><td><b>Bảo hành:</b></td><td>36T</td></tr>
+                  <tr>
+                    <td><b>Kho hàng:</b></td>
+                    
+                    
+                     
+                     
+                     
+                    
+                    
+                    <td>Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng</td>
+                    
+                    
+                    
+                  </tr>
+              </tbody></table>
+              
+              
+          </div><!--hover_content_pro-->
+      </li>
+      
+      <li>
+          
+          <div class="p_container">
+              <div class="p_sku">Mã SP: HDBO029</div>
+              <a href="http://www.hanoicomputer.vn/hdd-box-samsung-25-sata-usb-for-laptop/p6910.html" class="p_img"><img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/blank.gif" data-src="/media/product/250_6910_8018_hanoicomputer_95433_1.jpg" alt="HDD Box Samsung 2.5" style="visibility: hidden; opacity: 0;"></a>
+              <div class="p_price img_price"><span class="price-number-small-1"></span><span class="price-number-small-5"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span></div>
+              <div class="container_old_price">
+                  
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/hdd-box-samsung-25-sata-usb-for-laptop/p6910.html" class="p_name">HDD Box Samsung 2.5</a>
+              <div class="p_quantity">
+                  
+                      <i class="bg icon_in_stock"></i>
+                  
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','6910',1,'159000')" class="btn-cart-stop">Mua ngay</a>
+          </div><!--wrap_pro-->
+          <!--1-->
+          <div class="hover_content_pro tooltip" style="display: none;">
+              <a href="http://www.hanoicomputer.vn/hdd-box-samsung-25-sata-usb-for-laptop/p6910.html" class="hover_name">HDD Box Samsung 2.5</a>
+              
+              <div class="hori_line"></div>
+              <table>
+                  <tbody><tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-1"></span><span class="price-number-small-5"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              
+                              [Chưa bao gồm VAT]
+                          </span>
+                      </td>
+                  </tr>
+                  <tr><td><b>Bảo hành:</b></td><td>6T</td></tr>
+                  <tr>
+                    <td><b>Kho hàng:</b></td>
+                    
+                    <td>Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng</td>
+
+                  </tr>
+              </tbody></table>
+              
+              <div class="hori_line"></div>
+              <div class="hover_offer">
+                  
+                  <b>Mô tả tóm tắt:</b><br>
+                  
+                  + Ổ cứng chính là thiết bị lưu trữ chính trong máy tính của bạn. Hệ điều hành, dữ liệu, phim ảnh hay bất kỳ thông tin hệ thống đều được lưu trong ổ cứng. Với Samsung HDD inside, bạn có thể mang dữ liệu của mình đi bất cứ đâu mà không phải mang theo chiếc máy tính cồng kềnh. Samsung HDD inside cho phép gắn ổ cứng SATA bên trong và hoạt động tương tự như một ổ cứng di động thông qua cổng USB.<br>
+
+                  + Với thiết kế vỏ nhựa cao cấp, Samsung HDD inside có kết cấu chắc chắn, chống va đập, chống rung, chống sốc giúp bảo vệ tuyệt đối chiếc ổ cứng bên trong. Kích thước 13cm x 7.7cm x 2cm thực sự lý tưởng cho một thiết bị di dộng bỏ túi, bạn có thể mang đi bất kỳ đâu.<br>
+   
+                  + Samsung HDD inside tương thích với hầu hết các ổ cứng 2.5 inches của Samsung. Đồng thời với khả năng tự động nhận dạng bởi các hệ điều hành Windows 98/ME/2000/XP/Vista, Linux và Mac, bạn sẽ không cần bất kỳ cài đặt nào khác, chỉ cắm vào cổng USB và chạy, tương tự như chức năng Plug &amp; Play của hầu hết các thiết bị di động.<br>
+
+              </div>
+          </div><!--hover_content_pro-->
+      </li>
+      
+      <li>
+          
+          
+          
+          <!---->
+          <div class="p_container">
+              <div class="p_sku">Mã SP: HDSA001</div>
+              <a href="http://www.hanoicomputer.vn/ssd-samsung-850-evo-120gb-sata3-6gbs-25-doc-540mbs-ghi-520mbs/p29247.html" class="p_img"><img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/blank.gif" data-src="/media/product/250_29247_01.jpg" alt="SSD Samsung 850 EVO 120GB SATA3 6Gb/s 2.5&quot; (Đọc 540MB/s, Ghi 520MB/s)" style="visibility: hidden; opacity: 0;"></a>
+              <div class="p_price img_price"><span class="price-number-small-1"></span><span class="price-number-small-dot"></span><span class="price-number-small-5"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span></div>
+              <div class="container_old_price">
+                  
+                  <div class="p_old_price">2.078.700 VND</div>
+                  
+                  
+                  <div class="price_off">-23%</div>
+                
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/ssd-samsung-850-evo-120gb-sata3-6gbs-25-doc-540mbs-ghi-520mbs/p29247.html" class="p_name">SSD Samsung 850 EVO 120GB SATA3 6Gb/s 2.5" (Đọc 540MB/s, Ghi 520MB/s)</a>
+              <div class="p_quantity">
+                  
+                      <i class="bg icon_out_stock"></i>
+                  
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','29247',1,'1599000')" class="btn-cart-stop">Mua ngay</a>
+          </div><!--wrap_pro-->
+          <!--2-->
+          <div class="hover_content_pro tooltip" style="display: none;">
+              <a href="http://www.hanoicomputer.vn/ssd-samsung-850-evo-120gb-sata3-6gbs-25-doc-540mbs-ghi-520mbs/p29247.html" class="hover_name">SSD Samsung 850 EVO 120GB SATA3 6Gb/s 2.5" (Đọc 540MB/s, Ghi 520MB/s)</a>
+              
+              <div class="hori_line"></div>
+              <table>
+                  <tbody><tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-1"></span><span class="price-number-small-dot"></span><span class="price-number-small-5"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                  </tr>
+                  <tr><td><b>Bảo hành:</b></td><td>60T</td></tr>
+                  <tr>
+                    <td><b>Kho hàng:</b></td>
+
+                    <td>Liên hệ</td>
+                    
+                  </tr>
+              </tbody></table>
+              
+              <div class="hori_line"></div>
+              <div class="hover_offer">
+                  
+                  <b>Mô tả tóm tắt:</b><br>               
+                  
+                  + SAMSUNG SSD FLASH - ÔNG VUA CỦA BỘ NHỚ THẾ GIỚI<br>
+                  + - Thương hiệu số 1 về Memory Flash trên Thế Giới.<br>
+                  + - Model Name 850EVO (SP cao cấp có hiệu năng trên giá thành số 1 hiện tại)<br>
+                  + - Dung lượng lưu trữ 120GB.<br>
+                  + - Chuẩn kết nối SATA3 6Gb/s.<br>
+              </div>
+              
+              
+          </div><!--hover_content_pro-->
+      </li>
+      
+      <li>
+          
+          
+          
+          <!---->
+          <div class="p_container">
+              <div class="p_sku">Mã SP: HDWD080</div>
+              <a href="http://www.hanoicomputer.vn/hdd-western-caviar-blue-500gb-7200rpm-sata3-6gbs-16mb-cache/p3359.html" class="p_img"><img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/blank.gif" data-src="/media/product/250_3359_15009_hanoicomputer_20123_1342855280_1.jpg" alt="HDD Western Caviar Blue 500GB 7200Rpm, SATA3 6Gb/s, 16MB Cache" style="visibility: hidden; opacity: 0;"></a>
+              <div class="p_price img_price"><span class="price-number-small-1"></span><span class="price-number-small-dot"></span><span class="price-number-small-1"></span><span class="price-number-small-1"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span></div>
+              <div class="container_old_price">
+                  
+                  <div class="p_old_price">1.230.900 VND</div>
+                  
+                  
+                  <div class="price_off">-9%</div>
+                
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/hdd-western-caviar-blue-500gb-7200rpm-sata3-6gbs-16mb-cache/p3359.html" class="p_name">HDD Western Caviar Blue 500GB 7200Rpm, SATA3 6Gb/s, 16MB Cache</a>
+              <div class="p_quantity">
+                  
+                      <i class="bg icon_in_stock"></i>
+                  
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','3359',1,'1119000')" class="btn-cart-stop">Mua ngay</a>
+          </div><!--wrap_pro-->
+          <!--3-->
+          <div class="hover_content_pro tooltip" style="display: none;">
+              <a href="http://www.hanoicomputer.vn/hdd-western-caviar-blue-500gb-7200rpm-sata3-6gbs-16mb-cache/p3359.html" class="hover_name">HDD Western Caviar Blue 500GB 7200Rpm, SATA3 6Gb/s, 16MB Cache</a>
+              
+              <div class="hori_line"></div>
+              <table>
+                  <tbody><tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-1"></span><span class="price-number-small-dot"></span><span class="price-number-small-1"></span><span class="price-number-small-1"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                  </tr>
+                  <tr><td><b>Bảo hành:</b></td><td>24T</td></tr>
+                  <tr>
+                    <td><b>Kho hàng:</b></td>
+                    
+                    <td>Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng</td>
+                  </tr>
+              </tbody></table>
+              
+              <div class="hori_line"></div>
+              <div class="hover_offer">
+                  
+                  <b>Mô tả tóm tắt:</b><br>
+                  
+                  
+                  + <p>Western Digital 500GB/7200 Caviar Blue Sata3 16M</p><br>
+                  
+                  
+              </div>
+              
+              
+          </div><!--hover_content_pro-->
+      </li>
+      
+      <li>
+          <div class="p_container">
+              <div class="p_sku">Mã SP: HDKT016</div>
+              <a href="http://www.hanoicomputer.vn/ssd-kingston-ssdnow-120gb-sata3-6gbs-25-doc-450mbs-ghi-450mbs-sv300s37a120g/p11050.html" class="p_img"><img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/blank.gif" data-src="/media/product/250_11050_21434_hanoicomputer_5630_350a4ccffbaf5f_img_copy2.jpg" alt="SSD Kingston SSDNow 120GB SATA3 6Gb/s 2.5" style="visibility: hidden; opacity: 0;"></a>
+              <div class="p_price img_price"><span class="price-number-small-1"></span><span class="price-number-small-dot"></span><span class="price-number-small-1"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span></div>
+              <div class="container_old_price">
+                  
+                  <div class="p_old_price">1.299.000 VND</div>
+                  
+                  
+                  <div class="price_off">-8%</div>
+                
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/ssd-kingston-ssdnow-120gb-sata3-6gbs-25-doc-450mbs-ghi-450mbs-sv300s37a120g/p11050.html" class="p_name">SSD Kingston SSDNow 120GB SATA3 6Gb/s 2.5</a>
+              <div class="p_quantity">
+                  
+                      <i class="bg icon_in_stock"></i>
+                  
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','11050',1,'1199000')" class="btn-cart-stop">Mua ngay</a>
+          </div><!--wrap_pro-->
+          <!---->
+          <div class="hover_content_pro tooltip" style="display: none;">
+              <a href="http://www.hanoicomputer.vn/ssd-kingston-ssdnow-120gb-sata3-6gbs-25-doc-450mbs-ghi-450mbs-sv300s37a120g/p11050.html" class="hover_name">SSD Kingston SSDNow 120GB SATA3 6Gb/s 2.5</a>
+              
+              <div class="hori_line"></div>
+              <table>
+                  <tbody><tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-1"></span><span class="price-number-small-dot"></span><span class="price-number-small-1"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                  </tr>
+                  <tr><td><b>Bảo hành:</b></td><td>36T</td></tr>
+                  <tr>
+                    <td><b>Kho hàng:</b></td>
+                    <td>Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng</td>
+                  </tr>
+              </tbody></table>
+              
+              <div class="hori_line"></div>
+              <div class="hover_offer">
+                  
+                  <b>Mô tả tóm tắt:</b><br>
+                  + - Ổ cứng thể rắn cho tốc độ truy xuất dữ liệu cực nhanh, hơn gấp nhiều lần ổ cứng cơ HDD thông thường, tốc độ khởi động hệ điều hành, cài đặt hay chạy các ứng dụng đều nhanh hơn rất nhiều so với HDD.<br>
+                  + - Tiết kiệm điện, hoạt động êm ái, mát mẻ, độ bền cao.<br>
+                  + - Ổ mỏng 7.0mm, đi kèm là adapter nhựa để có thể lắp được với những hệ thống 9.5mm<br>
+              </div>
+          </div><!--hover_content_pro-->
+      </li>
+      
+      <li class="nomar_l">
+          <!--<div class="icon-km"><span>KM</span></div>-->
+          <div class="p_container">
+              <div class="p_sku">Mã SP: HDSE124</div>
+              <a href="http://www.hanoicomputer.vn/hdd-seagate-nas-8tb-sata3-256mb-cache-7200rpm-st8000vn0002/p31782.html" class="p_img"><img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/blank.gif" data-src="/media/product/250_31782_hdse124_001.jpg" alt="HDD Seagate NAS 8TB, Sata3, 256MB Cache, 7200Rpm (ST8000VN0002)" style="visibility: hidden; opacity: 0;"></a>
+              <div class="p_price img_price"><span class="price-number-small-8"></span><span class="price-number-small-dot"></span><span class="price-number-small-8"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span></div>
+              <div class="container_old_price">
+                  
+                  <div class="p_old_price">9.399.000 VND</div>
+                  
+                  
+                  <div class="price_off">-5%</div>
+                
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/hdd-seagate-nas-8tb-sata3-256mb-cache-7200rpm-st8000vn0002/p31782.html" class="p_name">HDD Seagate NAS 8TB, Sata3, 256MB Cache, 7200Rpm (ST8000VN0002)</a>
+              <div class="p_quantity">
+                  
+                      <i class="bg icon_in_stock"></i>
+                  
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','31782',1,'8899000')" class="btn-cart-stop">Mua ngay</a>
+          </div><!--wrap_pro-->
+          <!--0-->
+          <div class="hover_content_pro tooltip" style="display: none;">
+              <a href="http://www.hanoicomputer.vn/hdd-seagate-nas-8tb-sata3-256mb-cache-7200rpm-st8000vn0002/p31782.html" class="hover_name">HDD Seagate NAS 8TB, Sata3, 256MB Cache, 7200Rpm (ST8000VN0002)</a>
+              
+              <div class="hori_line"></div>
+              <table>
+                  <tbody><tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-8"></span><span class="price-number-small-dot"></span><span class="price-number-small-8"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                  </tr>
+                  <tr><td><b>Bảo hành:</b></td><td>36T</td></tr>
+                  <tr>
+                    <td><b>Kho hàng:</b></td>
+                    <td>Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà</td>
+                  </tr>
+              </tbody></table>
+              
+              <div class="hori_line"></div>
+              <div class="hover_offer">
+                  <b>Khuyến mại:</b><br>
+                  
+                  - 100% nhận quà tặng từ 100.000đ – 3.000.000đ gọi ngay để biết thêm chi tiết <br> + 43 Thái Hà 0964110606, 0968391551<br> + Lê Thanh Nghị 0911.450.995 <br> + Hải Phòng 0981.6500.22<br>
+                  
+                  Khuyến mại  Áo Thun Seagate mã AOTH018<br>
+                  
+              </div>
+              
+          </div><!--hover_content_pro-->
+      </li>
+      
+      <li>
+          <!--<div class="icon-km"><span>KM</span></div>-->
+          <div class="p_container">
+              <div class="p_sku">Mã SP: HDWD165</div>
+              <a href="http://www.hanoicomputer.vn/hdd-western-digital-my-passport-ultra-3tb-25-usb-30-den-classic-black/p30004.html" class="p_img"><img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/blank.gif" data-src="/media/product/250_30004_hdwd165_logo.jpg" alt="HDD Western Digital My Passport Ultra 3TB 2.5&quot; USB 3.0 Đen (Classic Black)&nbsp;" style="visibility: hidden; opacity: 0;"></a>
+              <div class="p_price img_price"><span class="price-number-small-4"></span><span class="price-number-small-dot"></span><span class="price-number-small-2"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span></div>
+              <div class="container_old_price">
+                  
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/hdd-western-digital-my-passport-ultra-3tb-25-usb-30-den-classic-black/p30004.html" class="p_name">HDD Western Digital My Passport Ultra 3TB 2.5" USB 3.0 Đen (Classic Black)&nbsp;</a>
+              <div class="p_quantity">
+                  
+                      <i class="bg icon_in_stock"></i>
+                  
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','30004',1,'4299000')" class="btn-cart-stop">Mua ngay</a>
+          </div><!--wrap_pro-->
+          <!--1-->
+          <div class="hover_content_pro tooltip" style="display: none;">
+              <a href="http://www.hanoicomputer.vn/hdd-western-digital-my-passport-ultra-3tb-25-usb-30-den-classic-black/p30004.html" class="hover_name">HDD Western Digital My Passport Ultra 3TB 2.5" USB 3.0 Đen (Classic Black)&nbsp;</a>
+              
+              <div class="hori_line"></div>
+              <table>
+                  <tbody><tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-4"></span><span class="price-number-small-dot"></span><span class="price-number-small-2"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                  </tr>
+                  <tr><td><b>Bảo hành:</b></td><td>36T</td></tr>
+                  <tr>
+                    <td><b>Kho hàng:</b></td>
+                    <td>Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng</td>
+                  </tr>
+              </tbody></table>
+              
+              
+              <div class="hori_line"></div>
+              <div class="hover_offer">
+                  <b>Khuyến mại:</b><br>
+                  
+                  Khuyến mại USB 16Gb PNY (USPN038) <br>
+                  
+              </div>
+              
+          </div><!--hover_content_pro-->
+      </li>
+
+      <li>
+          
+          <div class="p_container">
+              <div class="p_sku">Mã SP: HDBO029</div>
+              <a href="http://www.hanoicomputer.vn/hdd-box-samsung-25-sata-usb-for-laptop/p6910.html" class="p_img"><img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/blank.gif" data-src="/media/product/250_6910_8018_hanoicomputer_95433_1.jpg" alt="HDD Box Samsung 2.5" style="visibility: hidden; opacity: 0;"></a>
+              <div class="p_price img_price"><span class="price-number-small-1"></span><span class="price-number-small-5"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span></div>
+              <div class="container_old_price">
+                  
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/hdd-box-samsung-25-sata-usb-for-laptop/p6910.html" class="p_name">HDD Box Samsung 2.5</a>
+              <div class="p_quantity">
+                  
+                      <i class="bg icon_in_stock"></i>
+                  
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','6910',1,'159000')" class="btn-cart-stop">Mua ngay</a>
+          </div><!--wrap_pro-->
+          <!--1-->
+          <div class="hover_content_pro tooltip" style="display: none;">
+              <a href="http://www.hanoicomputer.vn/hdd-box-samsung-25-sata-usb-for-laptop/p6910.html" class="hover_name">HDD Box Samsung 2.5</a>
+              
+              <div class="hori_line"></div>
+              <table>
+                  <tbody><tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-1"></span><span class="price-number-small-5"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              
+                              [Chưa bao gồm VAT]
+                          </span>
+                      </td>
+                  </tr>
+                  <tr><td><b>Bảo hành:</b></td><td>6T</td></tr>
+                  <tr>
+                    <td><b>Kho hàng:</b></td>
+                    
+                    <td>Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng</td>
+
+                  </tr>
+              </tbody></table>
+              
+              <div class="hori_line"></div>
+              <div class="hover_offer">
+                  
+                  <b>Mô tả tóm tắt:</b><br>
+                  
+                  + Ổ cứng chính là thiết bị lưu trữ chính trong máy tính của bạn. Hệ điều hành, dữ liệu, phim ảnh hay bất kỳ thông tin hệ thống đều được lưu trong ổ cứng. Với Samsung HDD inside, bạn có thể mang dữ liệu của mình đi bất cứ đâu mà không phải mang theo chiếc máy tính cồng kềnh. Samsung HDD inside cho phép gắn ổ cứng SATA bên trong và hoạt động tương tự như một ổ cứng di động thông qua cổng USB.<br>
+
+                  + Với thiết kế vỏ nhựa cao cấp, Samsung HDD inside có kết cấu chắc chắn, chống va đập, chống rung, chống sốc giúp bảo vệ tuyệt đối chiếc ổ cứng bên trong. Kích thước 13cm x 7.7cm x 2cm thực sự lý tưởng cho một thiết bị di dộng bỏ túi, bạn có thể mang đi bất kỳ đâu.<br>
+      
+                  + Samsung HDD inside tương thích với hầu hết các ổ cứng 2.5 inches của Samsung. Đồng thời với khả năng tự động nhận dạng bởi các hệ điều hành Windows 98/ME/2000/XP/Vista, Linux và Mac, bạn sẽ không cần bất kỳ cài đặt nào khác, chỉ cắm vào cổng USB và chạy, tương tự như chức năng Plug &amp; Play của hầu hết các thiết bị di động.<br>
+
+              </div>
+          </div><!--hover_content_pro-->
+      </li>
+      
+      <li>
+          
+          
+          
+          <!---->
+          <div class="p_container">
+              <div class="p_sku">Mã SP: HDSA001</div>
+              <a href="http://www.hanoicomputer.vn/ssd-samsung-850-evo-120gb-sata3-6gbs-25-doc-540mbs-ghi-520mbs/p29247.html" class="p_img"><img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/blank.gif" data-src="/media/product/250_29247_01.jpg" alt="SSD Samsung 850 EVO 120GB SATA3 6Gb/s 2.5&quot; (Đọc 540MB/s, Ghi 520MB/s)" style="visibility: hidden; opacity: 0;"></a>
+              <div class="p_price img_price"><span class="price-number-small-1"></span><span class="price-number-small-dot"></span><span class="price-number-small-5"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span></div>
+              <div class="container_old_price">
+                  
+                  <div class="p_old_price">2.078.700 VND</div>
+                  
+                  
+                  <div class="price_off">-23%</div>
+                
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/ssd-samsung-850-evo-120gb-sata3-6gbs-25-doc-540mbs-ghi-520mbs/p29247.html" class="p_name">SSD Samsung 850 EVO 120GB SATA3 6Gb/s 2.5" (Đọc 540MB/s, Ghi 520MB/s)</a>
+              <div class="p_quantity">
+                  
+                      <i class="bg icon_out_stock"></i>
+                  
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','29247',1,'1599000')" class="btn-cart-stop">Mua ngay</a>
+          </div><!--wrap_pro-->
+          <!--2-->
+          <div class="hover_content_pro tooltip" style="display: none;">
+              <a href="http://www.hanoicomputer.vn/ssd-samsung-850-evo-120gb-sata3-6gbs-25-doc-540mbs-ghi-520mbs/p29247.html" class="hover_name">SSD Samsung 850 EVO 120GB SATA3 6Gb/s 2.5" (Đọc 540MB/s, Ghi 520MB/s)</a>
+              
+              <div class="hori_line"></div>
+              <table>
+                  <tbody><tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-1"></span><span class="price-number-small-dot"></span><span class="price-number-small-5"></span><span class="price-number-small-9"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                  </tr>
+                  <tr><td><b>Bảo hành:</b></td><td>60T</td></tr>
+                  <tr>
+                    <td><b>Kho hàng:</b></td>
+
+                    <td>Liên hệ</td>
+                    
+                  </tr>
+              </tbody></table>
+              
+              <div class="hori_line"></div>
+              <div class="hover_offer">
+                  
+                  <b>Mô tả tóm tắt:</b><br>               
+                  
+                  + SAMSUNG SSD FLASH - ÔNG VUA CỦA BỘ NHỚ THẾ GIỚI<br>
+                  + - Thương hiệu số 1 về Memory Flash trên Thế Giới.<br>
+                  + - Model Name 850EVO (SP cao cấp có hiệu năng trên giá thành số 1 hiện tại)<br>
+                  + - Dung lượng lưu trữ 120GB.<br>
+                  + - Chuẩn kết nối SATA3 6Gb/s.<br>
+              </div>
+              
+              
+          </div><!--hover_content_pro-->
+      </li>
+      
+      <li>
+          
+          
+          
+          <!---->
+          <div class="p_container">
+              <div class="p_sku">Mã SP: HDWD080</div>
+              <a href="http://www.hanoicomputer.vn/hdd-western-caviar-blue-500gb-7200rpm-sata3-6gbs-16mb-cache/p3359.html" class="p_img"><img class="lazy" src="HANOICOMPUTER%20-%20HI-END%20COMPUTER%20WORLD%20NO1%20VIETNAM_files/blank.gif" data-src="/media/product/250_3359_15009_hanoicomputer_20123_1342855280_1.jpg" alt="HDD Western Caviar Blue 500GB 7200Rpm, SATA3 6Gb/s, 16MB Cache" style="visibility: hidden; opacity: 0;"></a>
+              <div class="p_price img_price"><span class="price-number-small-1"></span><span class="price-number-small-dot"></span><span class="price-number-small-1"></span><span class="price-number-small-1"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span></div>
+              <div class="container_old_price">
+                  
+                  <div class="p_old_price">1.230.900 VND</div>
+                  
+                  
+                  <div class="price_off">-9%</div>
+                
+              </div>
+              <div class="clear"></div>
+              <a href="http://www.hanoicomputer.vn/hdd-western-caviar-blue-500gb-7200rpm-sata3-6gbs-16mb-cache/p3359.html" class="p_name">HDD Western Caviar Blue 500GB 7200Rpm, SATA3 6Gb/s, 16MB Cache</a>
+              <div class="p_quantity">
+                  
+                      <i class="bg icon_in_stock"></i>
+                  
+              </div>
+              <a href="javascript:addToShoppingCartStop('pro','3359',1,'1119000')" class="btn-cart-stop">Mua ngay</a>
+          </div><!--wrap_pro-->
+          <!--3-->
+          <div class="hover_content_pro tooltip" style="display: none;">
+              <a href="http://www.hanoicomputer.vn/hdd-western-caviar-blue-500gb-7200rpm-sata3-6gbs-16mb-cache/p3359.html" class="hover_name">HDD Western Caviar Blue 500GB 7200Rpm, SATA3 6Gb/s, 16MB Cache</a>
+              
+              <div class="hori_line"></div>
+              <table>
+                  <tbody><tr>
+                      <td><b>Giá bán:</b></td>
+                      <td>
+                          <span class="img_price_full"><span class="price-number-small-1"></span><span class="price-number-small-dot"></span><span class="price-number-small-1"></span><span class="price-number-small-1"></span><span class="price-number-small-9"></span><span class="price-number-small-dot"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span><span class="price-number-small-0"></span></span>
+                          <span class="hover_vat">
+                              [Đã bao gồm VAT]
+                              
+                          </span>
+                      </td>
+                  </tr>
+                  <tr><td><b>Bảo hành:</b></td><td>24T</td></tr>
+                  <tr>
+                    <td><b>Kho hàng:</b></td>
+                    
+                    <td>Còn hàng tại 129 + 131 Lê Thanh Nghị <br> Còn hàng tại 43 Thái Hà <br> Còn hàng tại A1-6 Lô 8A, Lê Hồng Phong, Ngô Quyền, Hải Phòng</td>
+                  </tr>
+              </tbody></table>
+              
+              <div class="hori_line"></div>
+              <div class="hover_offer">
+                  
+                  <b>Mô tả tóm tắt:</b><br>
+                  
+                  
+                  + <p>Western Digital 500GB/7200 Caviar Blue Sata3 16M</p><br>
+                  
+                  
+              </div>
+              
+              
+          </div><!--hover_content_pro-->
+      </li>
+    </ul>
+  </div><!--prouduct_list-->
+  <div class="clear space"></div>
+
+</div><!--container-->
+<div class="clear"></div>
+<%= render "layouts/footer" %>

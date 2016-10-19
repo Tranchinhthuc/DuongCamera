@@ -10,53 +10,11 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require_tree .
  *= require nprogress
  *= require nprogress-bootstrap
  *= require nprogress-turbolinks5
- *= require_tree .
  *= require_self
  */
 
 @import "font-awesome";
-
-
-.banner .flex-control-nav.flex-control-paging {
-  left: 0;
-  top: auto;
-}
-
-
-.trend .flex-control-nav.flex-control-paging {
-  top: auto;
-  width: 0;
-}
-
-.header-right i.fa {
-    font-size: 1.5em;
-    color: #ff590f;
-    margin-right: 5px;
-}
-
-.gallery-text ul li a i.fa:hover {
-  color: #ff590f;
-}
-
-.gallery-text ul li a i.fa {
-  font-size: 1.2em;
-  color: #33414E;
-  -webkit-transition: .5s all;
-  transition: .5s all;
-  -moz-transition: .5s all;
-}
-
-.faq > li > a {
-  color: #38678b;
-}
-
-.row.row1.scroll-pane {
-  height: auto
-}
-
-.language a, a:link, a:visited {
-  text-decoration: none;
-}

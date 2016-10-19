@@ -16,7 +16,7 @@ gem 'figaro'
 gem 'nprogress-rails'
 gem "jquery-turbolinks"
 gem 'sdoc', '~> 0.4.0', group: :doc
-# gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass'
 gem "font-awesome-rails"
 gem 'faker'
 gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
@@ -31,7 +31,7 @@ gem 'kaminari'
 gem 'globalize', github: 'globalize/globalize'
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'mysql2'
   gem 'byebug'
   gem 'pry'
   gem 'rspec-rails', '~> 3.5'

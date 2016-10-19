@@ -1,0 +1,26 @@
+<div id="nav_vertical">
+  <div class="bg title_nav_verticle"></div>
+  <ul class="ul ul_menu">
+    <% @categories.each do |category| %>
+
+      <li style="background-image:url('/media/category/cat_9591f66c942f3f8be9887599570d7728.png')">
+        <a href="http://www.hanoicomputer.vn/laptop-pc-mtb/c159.html" class="root">
+          <%= category.title %>
+        </a>
+        <div class="sub_nav">
+          <% category.sub_categories.each do |sub_category| %>
+            <div class="box_cate">
+              <a href="http://www.hanoicomputer.vn/laptop/c3.html" class="sub1">
+                <%= sub_category.title %>
+              </a>
+              <% sub_category.sub_categories.each do |sub_category| %>
+                <a href="http://www.hanoicomputer.vn/msi/c296.html" class="sub2"><%= sub_category.title %></a>
+              <% end %>
+            </div>
+          <% end %>
+        </div><!--sub_nav-->
+      </li>
+    <% end %>
+  </ul>
+  <div class="clear"></div>
+</div>
